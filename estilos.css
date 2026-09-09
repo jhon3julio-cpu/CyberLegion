@@ -1,0 +1,164 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100vh;	
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #E8EAED;
+	color: #e0e0e0;
+}
+
+header {
+	width: 100%;
+	height: 265px;
+	background: #000;
+}
+
+header img {
+	width: 100%;
+	height: 265px;
+	display: block;
+}
+
+nav {
+	width: 100%;
+	height: 50px;
+	background: linear-gradient(90deg, #1a1a2e, #16213e);
+	border-bottom: 2px solid #F30609;
+}
+
+main {
+	width: 100%;
+	height: 500px;
+	background: #111;
+	display: flex;
+}
+
+section {
+	width: 80%;
+	height: 500px;
+	background: #1a1a2e;
+	overflow-y: auto;
+}
+
+aside {
+	width: 20%;
+	height: 500px;
+	background: #0f0f1a;
+	border-left: 1px solid #F30609;
+}
+
+footer {
+	height: 50px;
+	background: linear-gradient(90deg, #1a1a2e, #16213e);
+	border-top: 2px solid #F30609;
+	text-align: center;
+	line-height: 50px;
+	color: #aaa;
+	font-size: 13px;
+}
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+	padding: 30px 10px 20px;
+	color: #ff3333;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.contenido {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	text-align: left;
+	padding: 10px 20px;
+	line-height: 1.5;
+	color: #ccc;
+}
+
+.contenido strong {
+	color: #ff3333;
+}
+
+#listahab {
+	padding-left: 40px;
+	list-style: none;
+	margin-top: 8px;
+}
+
+#listahab li {
+	padding: 4px 0;
+	position: relative;
+}
+
+#listahab li::before {
+	content: "▸";
+	color: #00d4ff;
+	position: absolute;
+	left: -18px;
+}
+
+#img-estudiando {
+	width: 280px;
+	height: auto;
+	padding: 15px 20px;
+	display: block;
+	margin: 0 auto;
+	border-radius: 6px;
+	opacity: 0.9;
+}
+
+#lista-link {
+	padding-left: 10px;
+	list-style: none;
+	padding-top: 10px;
+}
+
+#lista-link li {
+	padding-top: 18px;
+}
+
+#lista-link li a {
+	text-decoration: none;
+	color: #aaa;
+	font-size: 13px;
+	transition: color 0.2s;
+}
+
+#lista-link li a:hover {
+	color: #00d4ff;
+}
+
+#menu {
+	list-style: none;
+	height: 50px;
+}
+
+#menu li {
+	display: inline-block;
+	float: left;  	
+}
+
+#menu li a {
+	text-decoration: none;			
+	padding: 15px 22px; 
+	font-family: Arial, Helvetica, sans-serif;
+	display: block;
+	color: #e0e0e0;
+	font-size: 14px;
+	transition: all 0.2s;
+}
+
+#menu li a:hover {	
+	background-color: #00d4ff;	
+	color: #000;	
+	font-weight: bold;			
+}
