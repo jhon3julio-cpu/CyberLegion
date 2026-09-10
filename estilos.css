@@ -35,7 +35,7 @@ nav {
 
 main {
 	width: 100%;
-	height: 500px;
+	height: 600px;
 	background: #111;
 	display: flex;
 }
@@ -55,7 +55,7 @@ aside {
 }
 
 footer {
-	height: 50px;
+	height: 70px;
 	background: linear-gradient(90deg, #1a1a2e, #16213e);
 	border-top: 2px solid #F30609;
 	text-align: center;
