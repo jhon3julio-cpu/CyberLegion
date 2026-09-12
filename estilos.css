@@ -1,66 +1,623 @@
 * {
-	padding: 0px;
-	margin: 0px;
-	border: 0px;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 
 body {
-	width: 100%;
-	height: 100vh;	
-	margin: 0;
-	font-family: Arial, Helvetica, sans-serif;
-	background: #E8EAED;
-	color: #e0e0e0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #111;
+
+    color: #ffffff;
+
 }
+
+
+/* =========================
+        BANNER
+========================= */
 
 header {
-	width: 100%;
-	height: 265px;
-	background: #000;
+
+    width: 100%;
+
+    height: 310px;
+
+    overflow: hidden;
+
 }
+
 
 header img {
-	width: 100%;
-	height: 265px;
-	display: block;
+
+    width: 100%;
+
+    height: 310px;
+
+    object-fit: cover;
+
+    display: block;
+
 }
+
+
+/* =========================
+        MENU
+========================= */
 
 nav {
-	width: 100%;
-	height: 50px;
-	background: linear-gradient(90deg, #1a1a2e, #16213e);
-	border-bottom: 2px solid #F30609;
+
+    width: 100%;
+    border-bottom: 2px solid #F30609;
+    background: #111;
+    position:sticky;
+    top: 0;
+    z-index: 1000;
+
 }
 
+
+#menu {
+
+    list-style: none;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+}
+
+
+#menu li a {
+
+    display: block;
+
+    padding: 18px 25px;
+
+    color: white;
+
+    text-decoration: none;
+
+}
+
+
+#menu li a:hover {
+
+    background: #ff0033;
+
+}
+
+
+/* =========================
+        CONTENIDO
+========================= */
+
 main {
-	width: 100%;
-	height: 600px;
-	background: #111;
-	display: flex;
+
+    width: 100%;
+
+}
+
+/* =========================
+    CONTENEDOR PRINCIPAL
+========================= */
+
+.contenedor-pagina {
+
+    display: flex;
+
+    width: 100%;
+
+    align-items: stretch;
+
+}
+
+
+/* =========================
+        CONTENIDO
+========================= */
+
+.contenedor-pagina main {
+
+    width: 90%;
+
+}
+
+
+/* =========================
+       PUBLICIDAD LATERAL
+========================= */
+
+.publicidad-lateral {
+
+    width: 10%;
+
+    background: #151515;
+
+    border-left: 2px solid #ff0033;
+
+    padding: 10px;
+
+    text-align: center;
+
+}
+
+
+.publicidad-lateral h3 {
+
+    color: #ff0033;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.publicidad-lateral img {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    margin-bottom: 15px;
+
 }
 
 section {
-	width: 80%;
-	height: 500px;
-	background: #1a1a2e;
-	overflow-y: auto;
+
+    padding: 50px 10%;
+
 }
 
-aside {
-	width: 20%;
-	height: 500px;
-	background: #0f0f1a;
-	border-left: 1px solid #F30609;
+
+h1,
+h2 {
+
+    text-align: center;
+
+    margin-bottom: 25px;
+
 }
+
+
+h1 {
+
+    color: #ff0033;
+
+}
+
+
+h2 {
+
+    color: #ff0033;
+
+}
+
+
+p {
+
+    line-height: 1.6;
+
+}
+
+
+strong {
+
+    color: #ff0033;
+
+}
+
+
+/* =========================
+        PRESENTACION
+========================= */
+
+.presentacion {
+
+    text-align: center;
+
+    background: #1a1a1a;
+
+}
+
+
+/* =========================
+        SERVICIOS
+========================= */
+
+.servicios {
+
+    background: #111;
+
+}
+
+
+.servicios-grid {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 20px;
+
+}
+
+
+.servicio {
+
+    background: #1f1f1f;
+
+    padding: 25px;
+
+    border-left: 4px solid #ff0033;
+
+}
+
+
+.servicio h3 {
+
+    margin-bottom: 15px;
+
+}
+
+
+/* =========================
+        PCs
+========================= */
+
+#pcs {
+
+    background: #181818;
+
+}
+
+
+.pcs-grid {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+
+}
+
+
+.pc-card {
+
+    background: #222;
+
+    text-align: center;
+
+    padding-bottom: 20px;
+
+    border: 1px solid #333;
+
+}
+
+
+.pc-card img {
+
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+}
+
+
+.pc-card h3 {
+
+    color: #ff0033;
+
+    margin: 15px;
+
+}
+
+
+.pc-card p {
+
+    padding: 0 15px;
+
+}
+
+
+/* =========================
+        COMPONENTES
+========================= */
+
+.componentes {
+
+    background: #111;
+
+}
+
+
+.componentes-grid {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 20px;
+
+}
+
+
+.componente {
+
+    text-align: center;
+
+    background: #1f1f1f;
+
+    padding: 15px;
+
+}
+
+
+.componente img {
+
+    width: 100%;
+
+    height: 150px;
+
+    object-fit: cover;
+
+}
+
+
+.componente h3 {
+
+    margin-top: 15px;
+
+    color: #ffffff;
+
+}
+
+
+/* =========================
+        PROMOCIONES
+========================= */
+
+#promociones {
+
+    background: #181818;
+
+}
+
+
+.promocion {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 30px;
+
+    background: #222;
+
+    padding: 30px;
+
+}
+
+
+.promocion img {
+
+    width: 350px;
+
+    max-width: 100%;
+
+}
+
+
+.promocion div {
+
+    max-width: 400px;
+
+}
+
+
+.promocion h3 {
+
+    color: #ff0033;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* =========================
+        BOTONES
+========================= */
+
+.boton {
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 15px 25px;
+
+    background: #ff0033;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+
+.boton:hover {
+
+    background: #cc0029;
+
+}
+
+
+/* =========================
+        GALERIA
+========================= */
+
+.galeria {
+
+    background: #111;
+
+}
+
+
+.galeria-grid {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 15px;
+
+}
+
+
+.galeria-grid img {
+
+    width: 100%;
+
+    height: 200px;
+
+    object-fit: cover;
+
+}
+
+
+/* =========================
+        CONTACTO
+========================= */
+
+.contacto {
+
+    background: #1a1a1a;
+
+    text-align: center;
+
+}
+
+
+.contacto p {
+
+    margin-bottom: 25px;
+
+}
+
+
+.boton-whatsapp {
+
+    display: inline-block;
+
+    padding: 18px 30px;
+
+    background: #ff0033;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: 17px;
+
+}
+
+
+.boton-whatsapp:hover {
+
+    background: #cc0029;
+
+}
+
+
+/* =========================
+        FOOTER
+========================= */
 
 footer {
-	height: 70px;
-	background: linear-gradient(90deg, #1a1a2e, #16213e);
-	border-top: 2px solid #F30609;
-	text-align: center;
-	line-height: 50px;
-	color: #aaa;
+
+    background: #080808;
+
+    text-align: center;
+
+    padding: 30px;
+
+    border-top: 2px solid #ff0033;
+
+}
+
+
+footer h3 {
+
+    color: #ff0033;
+
+    margin-bottom: 10px;
+
+}
+
+
+footer p {
+
+    margin: 5px;
+
+    color: #aaa;
+
+}
+
+
+/* =========================
+        CELULARES
+========================= */
+
+@media (max-width: 600px) {
+
+    header,
+    header img {
+
+        height: 150px;
+
+    }
+
+
+    section {
+
+        padding: 35px 5%;
+
+    }
+
+
+    #menu {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+
+}	color: #aaa;
 	font-size: 13px;
 }
 
