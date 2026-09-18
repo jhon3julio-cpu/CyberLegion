@@ -94,6 +94,607 @@ nav {
 
 
 /* =========================
+    CONTENEDOR PRINCIPAL
+========================= */
+
+.contenedor-pagina {
+
+    display: flex;
+
+    width: 100%;
+
+    align-items: flex-start;
+
+    min-height: 600px;
+
+}
+
+
+/* =========================
+        CONTENIDO
+========================= */
+
+.contenedor-pagina main {
+
+    width: 80%;
+
+    flex: 1;
+
+}
+
+
+/* =========================
+    PUBLICIDAD LATERAL
+========================= */
+
+.publicidad {
+
+    width: 20%;
+
+    min-width: 200px;
+
+    max-width: 320px;
+
+    background: #1a1a1a;
+
+    border-left: 2px solid #ff0033;
+
+    padding: 20px 12px;
+
+    position: sticky;
+
+    top: 70px; /* debajo del menú sticky */
+
+    align-self: flex-start;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+.anuncio-imagen {
+    padding: 0;
+    overflow: hidden;
+    min-height: auto;
+}
+
+.anuncio-imagen a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.anuncio-imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.anuncio-imagen img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+
+
+section {
+
+    padding: 50px 10%;
+
+}
+
+
+h1,
+h2 {
+
+    text-align: center;
+
+    margin-bottom: 25px;
+
+}
+
+
+h1 {
+
+    color: #ff0033;
+
+}
+
+
+h2 {
+
+    color: #ff0033;
+
+}
+
+
+p {
+
+    line-height: 1.6;
+
+}
+
+
+strong {
+
+    color: #ff0033;
+
+}
+
+
+/* =========================
+        PRESENTACION
+========================= */
+
+.presentacion {
+
+    text-align: center;
+
+    background: #1a1a1a;
+
+}
+
+
+/* =========================
+        SERVICIOS
+========================= */
+
+.servicios {
+
+    background: #111;
+
+}
+
+
+.servicios-grid {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 20px;
+
+}
+
+
+.servicio {
+
+    background: #1f1f1f;
+
+    padding: 25px;
+
+    border-left: 4px solid #ff0033;
+
+}
+
+
+.servicio h3 {
+
+    margin-bottom: 15px;
+
+}
+
+
+/* =========================
+        PCs
+========================= */
+
+#pcs {
+
+    background: #181818;
+
+}
+
+
+.pcs-grid {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+
+}
+
+
+.pc-card {
+
+    background: #222;
+
+    text-align: center;
+
+    padding-bottom: 20px;
+
+    border: 1px solid #333;
+
+}
+
+
+.pc-card img {
+
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+}
+
+
+.pc-card h3 {
+
+    color: #ff0033;
+
+    margin: 15px;
+
+}
+
+
+.pc-card p {
+
+    padding: 0 15px;
+
+}
+
+
+/* =========================
+        COMPONENTES
+========================= */
+
+.componentes {
+
+    background: #111;
+
+}
+
+
+.componentes-grid {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 20px;
+
+}
+
+
+.componente {
+
+    text-align: center;
+
+    background: #1f1f1f;
+
+    padding: 15px;
+
+}
+
+
+.componente img {
+
+    width: 100%;
+
+    height: 150px;
+
+    object-fit: cover;
+
+}
+
+
+.componente h3 {
+
+    margin-top: 15px;
+
+    color: #ffffff;
+
+}
+
+
+/* =========================
+        PROMOCIONES
+========================= */
+
+#promociones {
+
+    background: #181818;
+
+}
+
+
+.promocion {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 30px;
+
+    background: #222;
+
+    padding: 30px;
+
+}
+
+
+.promocion img {
+
+    width: 350px;
+
+    max-width: 100%;
+
+}
+
+
+.promocion div {
+
+    max-width: 400px;
+
+}
+
+
+.promocion h3 {
+
+    color: #ff0033;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* =========================
+        BOTONES
+========================= */
+
+.boton {
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 15px 25px;
+
+    background: #ff0033;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+
+.boton:hover {
+
+    background: #cc0029;
+
+}
+
+
+/* =========================
+        GALERIA
+========================= */
+
+.galeria {
+
+    background: #111;
+
+}
+
+
+.galeria-grid {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 15px;
+
+}
+
+
+.galeria-grid img {
+
+    width: 100%;
+
+    height: 200px;
+
+    object-fit: cover;
+
+}
+
+
+/* =========================
+        CONTACTO
+========================= */
+
+.contacto {
+
+    background: #1a1a1a;
+
+    text-align: center;
+
+}
+
+
+.contacto p {
+
+    margin-bottom: 25px;
+
+}
+
+
+.boton-whatsapp {
+
+    display: inline-block;
+
+    padding: 18px 30px;
+
+    background: #ff0033;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: 17px;
+
+}
+
+
+.boton-whatsapp:hover {
+
+    background: #cc0029;
+
+}
+
+
+/* =========================
+        FOOTER
+========================= */
+
+footer {
+
+    background: #080808;
+
+    text-align: center;
+
+    padding: 30px;
+
+    border-top: 2px solid #ff0033;
+
+}
+
+
+footer h3 {
+
+    color: #ff0033;
+
+    margin-bottom: 10px;
+
+}
+
+
+footer p {
+
+    margin: 5px;
+
+    color: #aaa;
+
+}
+
+
+/* =========================
+        CELULARES
+========================= */
+
+@media (max-width: 900px) {
+
+    .contenedor-pagina {
+        flex-direction: column;
+    }
+
+    .contenedor-pagina main {
+        width: 100%;
+    }
+
+    .publicidad {
+        width: 100%;
+        max-width: 100%;
+        border-left: none;
+        border-top: 2px solid #ff0033;
+        position: static;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .anuncio {
+        width: 45%;
+        min-width: 140px;
+        min-height: 140px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    header,
+    header img {
+
+        height: 150px;
+
+    }
+
+
+    section {
+
+        padding: 35px 5%;
+
+    }
+
+
+    #menu {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    .anuncio {
+        width: 100%;
+    }
+
+}#menu {
+
+    list-style: none;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+}
+
+
+#menu li a {
+
+    display: block;
+
+    padding: 18px 25px;
+
+    color: white;
+
+    text-decoration: none;
+
+}
+
+
+#menu li a:hover {
+
+    background: #ff0033;
+
+}
+
+
+/* =========================
         CONTENIDO
 ========================= */
 
