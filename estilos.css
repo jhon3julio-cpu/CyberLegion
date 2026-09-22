@@ -157,8 +157,15 @@ nav {
 
 .anuncio-imagen {
     padding: 0;
-    overflow: hidden;
     min-height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+    background: #1f1f1f;
+}
+.anuncio-imagen:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(255, 0, 51, 0.35);
+    background: #2a2a2a;
 }
 
 .anuncio-imagen a {
@@ -171,12 +178,13 @@ nav {
     width: 100%;
     height: auto;
     display: block;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.4s ease, opacity 0.4s ease, filter 0.4s ease;
 }
 
 .anuncio-imagen img:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
+    transform: scale(1.08);
+    opacity: 0.85;
+    filter:brightness(1.1);
 }
 
 
@@ -253,10 +261,8 @@ strong {
 .servicios-grid {
 
     display: grid;
-
     grid-template-columns:
     repeat(auto-fit, minmax(200px, 1fr));
-
     gap: 20px;
 
 }
@@ -265,11 +271,16 @@ strong {
 .servicio {
 
     background: #1f1f1f;
-
     padding: 25px;
-
     border-left: 4px solid #ff0033;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    cursor: pointer;
 
+}
+.servicio:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(255, 0, 51, 0.35);
+    background: #2a2a2a;
 }
 
 
@@ -306,24 +317,31 @@ strong {
 .pc-card {
 
     background: #222;
-
     text-align: center;
-
     padding-bottom: 20px;
-
     border: 1px solid #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
 
+}
+.pc-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 12px 28px rgba(255, 0, 51, 0.4);
+    border-color: #ff0033;
 }
 
 
 .pc-card img {
 
     width: 100%;
-
     height: 220px;
-
     object-fit: cover;
+    transition: transform 0.4s ease;
 
+}
+.pc-card:hover img {
+    transform: scale(1.08);
 }
 
 
@@ -369,31 +387,41 @@ strong {
 .componente {
 
     text-align: center;
-
     background: #1f1f1f;
-
     padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
 
+}
+.componente:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 10px 25px rgba(255, 0, 51, 0.35);
+    background: #2a2a2a;
 }
 
 
 .componente img {
 
     width: 100%;
-
     height: 150px;
-
     object-fit: cover;
+    transition: transform 0.4s ease;
 
+}
+.componente:hover img {
+    transform: scale(1.1);
 }
 
 
 .componente h3 {
-
     margin-top: 15px;
-
     color: #ffffff;
+    transition: color 0.3s ease;
 
+}
+.componente:hover h3 {
+    color: #ff0033;
 }
 
 
@@ -506,13 +534,17 @@ strong {
 
 
 .galeria-grid img {
-
     width: 100%;
-
     height: 200px;
-
     object-fit: cover;
+    transition: transform 0.4s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
 
+}
+.galeria-grid img:hover {
+    transform: scale(1.06);
+    box-shadow: 0 8px 20px rgba(255, 0, 51, 0.4);
+    filter: brightness(1.15);
 }
 
 
