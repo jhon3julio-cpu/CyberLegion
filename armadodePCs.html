@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos2.css" rel="stylesheet" type="text/css">
+    <title>Cyber Legion - Armado de PCs</title>
+    <style>
+        /* Índice de categorías: mismo diseño, solo feedback al clic */
+        .indice-item {
+            cursor: pointer;
+        }
+
+        .indice-item.activo {
+            background: #2a2a2a;
+            box-shadow: 0 10px 25px rgba(255, 0, 51, 0.35);
+            transform: translateY(-4px);
+        }
+
+        /* Panel de contenido del índice */
+        .contenido-indice {
+            display: none;
+            max-width: 750px;
+            margin: 30px auto 0;
+            padding: 30px;
+            background: #1f1f1f;
+            border-left: 4px solid #ff0033;
+        }
+
+        .contenido-indice.visible {
+            display: block;
+        }
+
+        .contenido-indice h3 {
+            color: #ff0033;
+            margin-bottom: 15px;
+        }
+
+        .contenido-indice p {
+            margin-bottom: 14px;
+        }
+
+        .contenido-indice ul {
+            margin: 15px 0 15px 20px;
+            line-height: 1.7;
+        }
+
+        .contenido-indice li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- BANNER -->
+    <header>
+        <img src="Banner1.jpg" alt="Cyber Legion">
+    </header>
+
+    <!-- MENU -->
+    <nav>
+        <ul id="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <a href="https://www.aorus.com/es-bo/components" target="_blank">
+                    Componentes
+                </a>
+            </li>
+            <li>
+                <a href="armadodePCs.html">
+                    Armado
+                </a>
+            </li>
+            <li>
+                <a href="https://www.cyberpuerta.mx/Computadoras/PC-s-de-Escritorio/?srsltid=AfmBOoq_F3GyT0zpD4MDNTvOIEm71-StiBjqDYadd079XwSQAyRN5DNP"
+                   target="_blank">
+                    PCs
+                </a>
+            </li>
+            <li>
+                <a href="#promociones">
+                    Promociones
+                </a>
+            </li>
+            <li>
+                <a href="https://wa.me/59163365458?text=Hola%20quiero%20información%20sobre%20el%20armado%20de%20una%20PC"
+                   target="_blank">
+                    Asesor
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- CONTENEDOR PRINCIPAL + PUBLICIDAD -->
+    <div class="contenedor-pagina">
+
+        <main>
+
+            <!-- INTRO -->
+            <section class="presentacion">
+                <h1>ARMADO DE PCs A MEDIDA</h1>
+                <p>
+                    Armar una computadora no es solo juntar piezas. En <strong>Cyber Legion</strong>
+                    diseñamos y ensamblamos tu equipo pensando en el uso real que le vas a dar:
+                    jugar, editar, estudiar, trabajar o una mezcla de todo.
+                    Te guiamos desde la elección de componentes hasta la entrega final,
+                    para que no gastes de más ni te quedes corto de rendimiento.
+                </p>
+            </section>
+
+            <!-- PARA QUIEN ES (ÍNDICE) -->
+            <section class="servicios">
+                <h2>¿PARA QUIÉN ES ESTE SERVICIO?</h2>
+                <p style="max-width: 800px; margin: 0 auto 30px; text-align: center;">
+                    No importa si es tu primera PC o si ya has armado varias.
+                    Nuestro servicio está pensado para quienes quieren un equipo confiable,
+                    bien equilibrado y sin dolores de cabeza.
+                    <br><br>
+                    <em style="color: #aaa;">Haz clic en una categoría para ver más detalles.</em>
+                </p>
+
+                <div class="servicios-grid">
+                    <div class="servicio indice-item" data-target="contenido-gamers">
+                        <h3>Gamers</h3>
+                        <p>
+                            Quieres jugar en alto rendimiento sin cuellos de botella.
+                            Te armamos una PC equilibrada entre procesador, gráfica,
+                            memoria y refrigeración según tu presupuesto y la resolución
+                            en la que juegas (Full HD, 2K o 4K).
+                        </p>
+                    </div>
+                    <div class="servicio indice-item" data-target="contenido-oficina">
+                        <h3>Estudiantes y oficina</h3>
+                        <p>
+                            Necesitas una máquina silenciosa, estable y económica
+                            para clases, documentos, navegación y videollamadas.
+                            Priorizamos fiabilidad y bajo consumo sin sacrificar fluidez.
+                        </p>
+                    </div>
+                    <div class="servicio indice-item" data-target="contenido-profesionales">
+                        <h3>Creadores y profesionales</h3>
+                        <p>
+                            Editas video, diseñas, renderizas o trabajas con varias
+                            aplicaciones a la vez. Elegimos procesadores potentes,
+                            mucha RAM y almacenamiento rápido para que no pierdas tiempo.
+                        </p>
+                    </div>
+                    <div class="servicio indice-item" data-target="contenido-actualizacion">
+                        <h3>Actualización de PC</h3>
+                        <p>
+                            Ya tienes una computadora y quieres mejorar solo algunas piezas.
+                            Te indicamos qué conviene cambiar primero para notar
+                            la mayor diferencia sin tirar el resto del equipo.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CONTENIDO DETALLADO DEL ÍNDICE -->
+                <div id="contenido-gamers" class="contenido-indice">
+                    <h3>Armado para Gamers</h3>
+                    <p>
+                        Una PC gamer bien armada no depende solo de la tarjeta gráfica.
+                        Buscamos un equilibrio real entre procesador, memoria RAM,
+                        almacenamiento SSD y refrigeración, según los juegos que juegas
+                        y la resolución de tu monitor.
+                    </p>
+                    <p><strong style="color: #ff0033;">Qué priorizamos:</strong></p>
+                    <ul>
+                        <li>Tarjeta gráfica adecuada a Full HD, 2K o 4K</li>
+                        <li>Procesador que no limite a la gráfica en juegos actuales</li>
+                        <li>Mínimo 16 GB de RAM (32 GB si usas streaming o varias apps)</li>
+                        <li>SSD NVMe para cargas rápidas de juegos y sistema</li>
+                        <li>Buena refrigeración y fuente de poder confiable</li>
+                    </ul>
+                    <p>
+                        Te preguntamos qué títulos juegas, a qué resolución y si también
+                        haces streaming o edición. Con eso armamos una configuración
+                        que rinda hoy y aguante un par de años sin quedarse corta.
+                    </p>
+                </div>
+
+                <div id="contenido-oficina" class="contenido-indice">
+                    <h3>Armado para Estudiantes y Oficina</h3>
+                    <p>
+                        Aquí lo importante es fluidez, silencio y un precio razonable.
+                        No necesitas una gráfica de alto rendimiento: un procesador
+                        moderno, suficiente RAM y un SSD bastan para que todo vaya rápido
+                        en clases, documentos, navegación y videollamadas.
+                    </p>
+                    <p><strong style="color: #ff0033;">Qué priorizamos:</strong></p>
+                    <ul>
+                        <li>Procesador eficiente y con buen rendimiento en multitarea</li>
+                        <li>8 a 16 GB de RAM según el uso (más si abres muchas pestañas)</li>
+                        <li>SSD para que el sistema y los programas abran al instante</li>
+                        <li>Gabinete y ventilación discretos (poco ruido)</li>
+                        <li>Fuente de poder de calidad, aunque sea de menor potencia</li>
+                    </ul>
+                    <p>
+                        Ideal si estudias, trabajas con Office, Zoom, navegador y
+                        algunas herramientas ligeras. Te ayudamos a no gastar de más
+                        en componentes que no vas a aprovechar.
+                    </p>
+                </div>
+
+                <div id="contenido-profesionales" class="contenido-indice">
+                    <h3>Armado para Creadores y Profesionales</h3>
+                    <p>
+                        Edición de video, diseño, modelado 3D, programación o
+                        multitarea pesada exigen más núcleos, más RAM y almacenamiento
+                        rápido. Aquí invertimos donde realmente se nota el tiempo de trabajo.
+                    </p>
+                    <p><strong style="color: #ff0033;">Qué priorizamos:</strong></p>
+                    <ul>
+                        <li>Procesadores con varios núcleos y buen rendimiento multi-hilo</li>
+                        <li>32 GB de RAM o más, según el software que uses</li>
+                        <li>SSD NVMe rápido (y a veces un segundo disco para proyectos)</li>
+                        <li>Gráfica con buena memoria si renderizas o usas aceleración GPU</li>
+                        <li>Buena refrigeración para sesiones largas de trabajo</li>
+                    </ul>
+                    <p>
+                        Cuéntanos qué programas usas (Premiere, After Effects, Blender,
+                        AutoCAD, etc.) y el tamaño típico de tus proyectos. Así evitamos
+                        cuellos de botella y armamos un equipo que realmente acelere tu flujo.
+                    </p>
+                </div>
+
+                <div id="contenido-actualizacion" class="contenido-indice">
+                    <h3>Actualización de tu PC actual</h3>
+                    <p>
+                        No siempre hace falta comprar una PC nueva. Muchas veces
+                        cambiar una o dos piezas (RAM, SSD, gráfica o procesador)
+                        da un salto grande de rendimiento y alarga la vida del equipo.
+                    </p>
+                    <p><strong style="color: #ff0033;">Cómo te ayudamos:</strong></p>
+                    <ul>
+                        <li>Revisamos qué tienes ahora y qué es compatible</li>
+                        <li>Te decimos qué conviene cambiar primero (el mayor impacto)</li>
+                        <li>Comprobamos que la fuente y la placa soporten la mejora</li>
+                        <li>Armamos e instalamos solo lo que actualices</li>
+                        <li>Te orientamos para no gastar en algo que no puedas aprovechar</li>
+                    </ul>
+                    <p>
+                        Trae o describe tu configuración actual (procesador, RAM,
+                        gráfica, placa) y el uso que le das. Te proponemos un plan
+                        de actualización por etapas si el presupuesto es limitado.
+                    </p>
+                </div>
+            </section>
+
+            <!-- PROCESO DETALLADO -->
+            <section id="pcs">
+                <h2>NUESTRO PROCESO DE ARMADO</h2>
+                <div style="max-width: 750px; margin: 0 auto;">
+                    <div class="servicio" style="margin-bottom: 20px;">
+                        <h3>Paso 1 — Conversamos contigo</h3>
+                        <p>
+                            Empezamos preguntándote para qué vas a usar la PC, cuánto
+                            estás dispuesto a invertir y si tienes preferencias
+                            (marca, RGB, silencio, tamaño del gabinete, etc.).
+                            Con eso armamos un perfil claro de lo que necesitas.
+                        </p>
+                    </div>
+                    <div class="servicio" style="margin-bottom: 20px;">
+                        <h3>Paso 2 — Elegimos los componentes</h3>
+                        <p>
+                            Seleccionamos procesador, placa madre, memoria RAM,
+                            almacenamiento, fuente de poder, refrigeración y gabinete
+                            cuidando la compatibilidad y la relación calidad-precio.
+                            Te explicamos por qué cada pieza y no otra.
+                        </p>
+                    </div>
+                    <div class="servicio" style="margin-bottom: 20px;">
+                        <h3>Paso 3 — Ensamblamos y probamos</h3>
+                        <p>
+                            Armamos el equipo con cableado ordenado, instalamos
+                            el sistema operativo, drivers y actualizaciones.
+                            Hacemos pruebas de estabilidad y temperatura para
+                            asegurarnos de que todo funcione como debe.
+                        </p>
+                    </div>
+                    <div class="servicio" style="margin-bottom: 20px;">
+                        <h3>Paso 4 — Te entregamos listo para usar</h3>
+                        <p>
+                            Recibes tu PC funcionando, con las aplicaciones básicas
+                            listas y una breve explicación de cómo cuidarla.
+                            Si surge alguna duda después, seguimos asesorándote.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- QUE INCLUYE -->
+            <section class="componentes">
+                <h2>¿QUÉ INCLUYE EL SERVICIO?</h2>
+                <p style="max-width: 750px; margin: 0 auto 25px; text-align: center;">
+                    Cuando contratas el armado con nosotros, no solo recibes las piezas
+                    juntas. Incluimos todo lo necesario para que enciendas y uses
+                    tu computadora el mismo día.
+                </p>
+                <div class="servicios-grid">
+                    <div class="servicio">
+                        <h3>Ensamble profesional</h3>
+                        <p>
+                            Montaje completo de todos los componentes,
+                            pasta térmica aplicada correctamente y
+                            cableado interno limpio y ordenado.
+                        </p>
+                    </div>
+                    <div class="servicio">
+                        <h3>Sistema operativo</h3>
+                        <p>
+                            Instalación de Windows (u otro sistema si lo pides),
+                            activación y configuración inicial para un uso cómodo.
+                        </p>
+                    </div>
+                    <div class="servicio">
+                        <h3>Drivers y optimización</h3>
+                        <p>
+                            Drivers actualizados, BIOS revisada cuando corresponde
+                            y ajustes básicos de rendimiento y temperatura.
+                        </p>
+                    </div>
+                    <div class="servicio">
+                        <h3>Pruebas y garantía del armado</h3>
+                        <p>
+                            Test de estrés y verificación de temperaturas.
+                            Si algo falla por el montaje, nos hacemos cargo.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONSEJOS -->
+            <section class="servicios">
+                <h2>CONSEJOS ANTES DE ARMAR TU PC</h2>
+                <div style="max-width: 750px; margin: 0 auto;">
+                    <p style="margin-bottom: 18px;">
+                        <strong style="color: #ff0033;">Define bien el uso principal.</strong>
+                        No es lo mismo una PC para League of Legends y clases online
+                        que una para edición de video en 4K. El uso determina
+                        dónde conviene invertir más.
+                    </p>
+                    <p style="margin-bottom: 18px;">
+                        <strong style="color: #ff0033;">No gastes todo en la gráfica.</strong>
+                        Una tarjeta potente con un procesador débil o poca RAM
+                        no rinde bien. El equilibrio entre piezas es más importante
+                        que una sola pieza “top”.
+                    </p>
+                    <p style="margin-bottom: 18px;">
+                        <strong style="color: #ff0033;">La fuente de poder importa.</strong>
+                        Una fuente de baja calidad puede dañar el resto de componentes.
+                        Preferimos fuentes confiables, aunque cuesten un poco más.
+                    </p>
+                    <p style="margin-bottom: 18px;">
+                        <strong style="color: #ff0033;">Piensa en el futuro.</strong>
+                        Si puedes, deja margen para ampliar RAM o cambiar
+                        la gráfica más adelante. Así no tienes que comprar
+                        todo de nuevo en uno o dos años.
+                    </p>
+                    <p>
+                        <strong style="color: #ff0033;">Presupuesto realista.</strong>
+                        Dinos cuánto puedes invertir y te armamos la mejor
+                        configuración posible dentro de ese rango, sin promesas
+                        imposibles ni componentes innecesarios.
+                    </p>
+                </div>
+            </section>
+
+            <!-- PROMOCIONES -->
+            <section id="promociones">
+                <h2>🔥 PROMOCIONES EN ARMADO 🔥</h2>
+                <div class="promocion">
+                    <img src="promocion.jpg" id="promocion" alt="Promocion">
+                    <div>
+                        <h3>PROMOCIÓN DEL MES</h3>
+                        <p>
+                            Armado gratuito al comprar
+                            todos los componentes con nosotros.
+                            Consulta ofertas vigentes.
+                        </p>
+                        <a href="https://wa.me/59163365458?text=Hola%20quiero%20consultar%20sobre%20las%20promociones%20de%20armado"
+                           target="_blank"
+                           class="boton">
+                            CONSULTAR AHORA
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACTO -->
+            <section class="contacto">
+                <h2>¿LISTO PARA ARMAR TU PC?</h2>
+                <p>
+                    Escríbenos y cuéntanos qué necesitas.
+                    Te armamos un presupuesto sin compromiso
+                    y te explicamos cada opción con claridad.
+                </p>
+                <a href="https://wa.me/59163365458?text=Hola%20quiero%20armar%20mi%20PC"
+                   target="_blank"
+                   class="boton-whatsapp">
+                    💬 HABLAR CON NUESTRO ASESOR!
+                </a>
+            </section>
+
+        </main>
+
+        <!-- PUBLICIDAD LATERAL -->
+        <aside class="publicidad">
+            <div class="anuncio-imagen">
+                <li>
+                    <a href="https://benqalt970-rgb.github.io/Dinero-facil/" target="_blank">
+                        <p class="contenido"><em> ¿Deseas ganar dinero desde tu casa? </em></p>
+                    </a>
+                </li>
+                <a href="https://benqalt970-rgb.github.io/Dinero-facil/" target="_blank">
+                    <img src="https://benqalt970-rgb.github.io/Dinero-facil/image_c014d8a5.jpg" width="275px" height="200px">
+                </a>
+            </div>
+            <div class="anuncio-imagen">
+                <li>
+                    <a href="https://rautor12.github.io/usodelasIAs/" target="_blank">
+                        <p class="contenido"><em> ¿No sabes como usar la inteligencia artificial? </em></p>
+                    </a>
+                </li>
+                <a href="https://rautor12.github.io/usodelasIAs/" target="_blank">
+                    <img src="https://github.com/Rautor12/usodelasIAs/raw/main/publicidad.png" width="275px" height="200px">
+                </a>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>CYBER LEGION</h3>
+        <p>Tu PC, tu mundo.</p>
+        <p>© 2026 Cyber Legion | Todos los derechos reservados</p>
+    </footer>
+
+    <script src="jquery-4.0.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            // Animación de la imagen de promoción
+            $("#promocion").click(function () {
+                $(this).animate({ width: "385px", opacity: 0.7 }, 500);
+                $(this).animate({ width: "350px", opacity: 1 }, 500);
+            });
+
+            // Índice: clic en las tarjetas muestra su contenido
+            $(".indice-item").click(function () {
+                var target = $(this).data("target");
+
+                // Quitar activo de todas y ocultar todos los contenidos
+                $(".indice-item").removeClass("activo");
+                $(".contenido-indice").removeClass("visible");
+
+                // Activar la tarjeta clicada y mostrar su contenido
+                $(this).addClass("activo");
+                $("#" + target).addClass("visible");
+
+                // Scroll suave hasta el contenido
+                $("html, body").animate({
+                    scrollTop: $("#" + target).offset().top - 100
+                }, 400);
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="estilos2.css" rel="stylesheet" type="text/css">
+
+    <title>Cyber Legion - Actualización</title>
+
+    <style>
+        /* Índice de categorías: mismo diseño, solo feedback al clic */
+        .indice-item {
+            cursor: pointer;
+        }
+
+        .indice-item.activo {
+            background: #2a2a2a;
+            box-shadow: 0 10px 25px rgba(255, 0, 51, 0.35);
+            transform: translateY(-4px);
+        }
+
+        /* Panel de contenido del índice */
+        .contenido-indice {
+            display: none;
+            max-width: 750px;
+            margin: 30px auto 0;
+            padding: 30px;
+            background: #1f1f1f;
+            border-left: 4px solid #ff0033;
+        }
+
+        .contenido-indice.visible {
+            display: block;
+        }
+
+        .contenido-indice h3 {
+            color: #ff0033;
+            margin-bottom: 15px;
+        }
+
+        .contenido-indice p {
+            margin-bottom: 14px;
+        }
+
+        .contenido-indice ul {
+            margin: 15px 0 15px 20px;
+            line-height: 1.7;
+        }
+
+        .contenido-indice li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- BANNER -->
+
+    <header>
+
+        <img src="Banner1.jpg"
+             alt="Cyber Legion">
+
+    </header>
+
+
+    <!-- MENU -->
+
+    <nav>
+
+        <ul id="menu">
+
+            <li><a href="https://jhon3julio-cpu.github.io/CyberLegion/">Inicio</a></li>
+
+            <li>
+                <a href="https://www.aorus.com/es-bo/components"
+                   target="_blank">
+                   Componentes
+                </a>
+            </li>
+
+            <li>
+                <a href="https://es.buildcores.com/"
+                   target="_blank">
+                   Armado
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.cyberpuerta.mx/Computadoras/PC-s-de-Escritorio/?srsltid=AfmBOoq_F3GyT0zpD4MDNTvOIEm71-StiBjqDYadd079XwSQAyRN5DNP">
+                    PCs
+                </a>
+            </li>
+
+            <li>
+                <a href="#promociones">
+                    Promociones
+                </a>
+            </li>
+
+            <li>
+                <a href="https://wa.me/59163365458?text=Hola%20quiero%20información%20sobre%20el%20armado%20de%20una%20PC"
+                   target="_blank">
+
+                   Asesor
+
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- CONTENEDOR PRINCIPAL + PUBLICIDAD -->
+
+    <div class="contenedor-pagina">
+
+    <!-- PRESENTACION -->
+
+    <main>
+
+
+        <section class="presentacion">
+
+            <h1>ACTUALIZA TU PC SIN CAMBIARLA ENTERA</h1>
+
+            <p>
+
+                En <strong>Cyber Legion</strong> revisamos tu computadora
+                actual y te decimos exactamente qué componentes conviene
+                cambiar. Muchas veces con una o dos piezas nuevas alcanza
+                para notar una gran diferencia en el rendimiento.
+
+            </p>
+
+        </section>
+
+
+        <!-- QUE PUEDES ACTUALIZAR -->
+
+        <section class="servicios">
+
+            <h2>¿QUÉ PUEDES ACTUALIZAR?</h2>
+
+            <p style="max-width: 800px; margin: 0 auto 30px; text-align: center;">
+                <em style="color: #aaa;">Haz clic en una categoría para ver más detalles.</em>
+            </p>
+
+
+            <div class="servicios-grid">
+
+                <div class="servicio indice-item" data-target="contenido-grafica">
+
+                    <h3>🎮 Tarjeta gráfica</h3>
+
+                    <p>
+                        Ideal si tus juegos van con tirones
+                        o bajas de resolución para mantener FPS.
+                    </p>
+
+                </div>
+
+
+                <div class="servicio indice-item" data-target="contenido-ram">
+
+                    <h3>🧠 Memoria RAM</h3>
+
+                    <p>
+                        Ideal si el sistema se vuelve lento
+                        con varios programas abiertos a la vez.
+                    </p>
+
+                </div>
+
+
+                <div class="servicio indice-item" data-target="contenido-ssd">
+
+                    <h3>💾 Almacenamiento SSD</h3>
+
+                    <p>
+                        Ideal si tu PC tarda en encender
+                        o los programas cargan despacio.
+                    </p>
+
+                </div>
+
+
+                <div class="servicio indice-item" data-target="contenido-procesador">
+
+                    <h3>🔩 Procesador y placa madre</h3>
+
+                    <p>
+                        Cuando el límite no es la gráfica ni la RAM,
+                        revisamos si conviene cambiarlos juntos.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTENIDO DETALLADO DEL ÍNDICE -->
+
+            <div id="contenido-grafica" class="contenido-indice">
+
+                <h3>Actualizar la tarjeta gráfica</h3>
+
+                <p>
+                    Es el cambio que más se nota en juegos: más cuadros por
+                    segundo, mejor calidad gráfica y menos tirones en los
+                    títulos actuales.
+                </p>
+
+                <p><strong style="color: #ff0033;">Qué revisamos:</strong></p>
+
+                <ul>
+                    <li>Compatibilidad con tu placa madre y espacio en el gabinete</li>
+                    <li>Que la fuente de poder soporte el consumo de la nueva gráfica</li>
+                    <li>Que el procesador no limite el rendimiento de la gráfica nueva</li>
+                    <li>La resolución y los juegos a los que apuntas (Full HD, 2K o 4K)</li>
+                </ul>
+
+                <p>
+                    Te preguntamos qué juegos jugás y a qué resolución para
+                    recomendarte una gráfica que realmente rinda en tu caso,
+                    sin pagar de más por potencia que no vas a usar.
+                </p>
+
+            </div>
+
+
+            <div id="contenido-ram" class="contenido-indice">
+
+                <h3>Actualizar la memoria RAM</h3>
+
+                <p>
+                    Cuando la RAM se queda corta, el sistema empieza a usar
+                    el disco como memoria temporal y todo se vuelve más lento,
+                    aunque el procesador y la gráfica estén bien.
+                </p>
+
+                <p><strong style="color: #ff0033;">Qué revisamos:</strong></p>
+
+                <ul>
+                    <li>Cuánta RAM tenés y cuánta usan tus programas habituales</li>
+                    <li>Compatibilidad de velocidad y tipo con tu placa madre</li>
+                    <li>Si conviene agregar módulos o reemplazarlos por otros más rápidos</li>
+                    <li>Configuración en modo dual channel para mejor rendimiento</li>
+                </ul>
+
+                <p>
+                    Ideal si trabajás con varias pestañas, programas de oficina
+                    y videollamadas al mismo tiempo, o si jugás y hacés streaming
+                    en simultáneo.
+                </p>
+
+            </div>
+
+
+            <div id="contenido-ssd" class="contenido-indice">
+
+                <h3>Actualizar a almacenamiento SSD</h3>
+
+                <p>
+                    Si todavía usás un disco duro mecánico, pasar a SSD suele
+                    ser el cambio más notorio de todos: arranques casi
+                    instantáneos y programas que cargan en segundos.
+                </p>
+
+                <p><strong style="color: #ff0033;">Qué revisamos:</strong></p>
+
+                <ul>
+                    <li>Si tu placa soporta SSD NVMe o conviene uno SATA</li>
+                    <li>Cuánta capacidad necesitás según tus archivos y programas</li>
+                    <li>Migración de tu sistema operativo sin perder tus datos</li>
+                    <li>Si conviene mantener el disco duro viejo como almacenamiento extra</li>
+                </ul>
+
+                <p>
+                    Te ayudamos a decidir la capacidad justa para vos, sin
+                    quedarte corto de espacio ni pagar de más por algo que
+                    no vas a llenar.
+                </p>
+
+            </div>
+
+
+            <div id="contenido-procesador" class="contenido-indice">
+
+                <h3>Actualizar procesador y placa madre</h3>
+
+                <p>
+                    Es el cambio más grande: casi siempre implica renovar
+                    también la placa madre y a veces la RAM, así que lo
+                    evaluamos con cuidado antes de recomendarlo.
+                </p>
+
+                <p><strong style="color: #ff0033;">Qué revisamos:</strong></p>
+
+                <ul>
+                    <li>Si el resto de tus componentes (gráfica, RAM, fuente) siguen sirviendo</li>
+                    <li>Qué tanto va a mejorar realmente tu uso principal</li>
+                    <li>Compatibilidad entre el nuevo procesador y la placa madre</li>
+                    <li>Si conviene esta actualización ahora o esperar a otra generación</li>
+                </ul>
+
+                <p>
+                    Solo lo recomendamos cuando el procesador es realmente
+                    el cuello de botella. Si el problema está en otro lado,
+                    te lo decimos antes de gastar en esto.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SEÑALES -->
+
+        <section class="componentes">
+
+            <h2>SEÑALES DE QUE ES HORA DE ACTUALIZAR</h2>
+
+            <div style="max-width: 750px; margin: 0 auto;">
+
+                <p style="margin-bottom: 18px;">
+                    <strong style="color: #ff0033;">Bajan los FPS en tus juegos.</strong>
+                    Los títulos que antes corrían bien ahora piden
+                    bajar calidad o resolución para no trabarse.
+                </p>
+
+                <p style="margin-bottom: 18px;">
+                    <strong style="color: #ff0033;">El inicio se hace eterno.</strong>
+                    Si tu PC tarda más de un minuto en estar lista
+                    para usarse, algo se puede optimizar o cambiar.
+                </p>
+
+                <p style="margin-bottom: 18px;">
+                    <strong style="color: #ff0033;">Todo se vuelve lento con varios programas.</strong>
+                    Abrir el navegador, un editor y una llamada al
+                    mismo tiempo no debería frenar tu equipo.
+                </p>
+
+                <p style="margin-bottom: 18px;">
+                    <strong style="color: #ff0033;">El almacenamiento está casi lleno.</strong>
+                    Y ya no sabes bien qué borrar sin perder algo
+                    importante.
+                </p>
+
+                <p>
+                    <strong style="color: #ff0033;">Los programas pesados se congelan.</strong>
+                    Edición, diseño o renderizado que se traban
+                    son señal de que el equipo llegó a su límite.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROCESO -->
+
+        <section id="pcs">
+
+            <h2>NUESTRO PROCESO DE ACTUALIZACIÓN</h2>
+
+            <div style="max-width: 750px; margin: 0 auto;">
+
+                <div class="servicio" style="margin-bottom: 20px;">
+
+                    <h3>Paso 1 — Diagnóstico</h3>
+
+                    <p>
+                        Revisamos tu configuración actual
+                        y dónde está el límite real de rendimiento.
+                    </p>
+
+                </div>
+
+                <div class="servicio" style="margin-bottom: 20px;">
+
+                    <h3>Paso 2 — Recomendación</h3>
+
+                    <p>
+                        Te proponemos qué cambiar primero,
+                        con el mayor impacto según tu presupuesto.
+                    </p>
+
+                </div>
+
+                <div class="servicio" style="margin-bottom: 20px;">
+
+                    <h3>Paso 3 — Instalación</h3>
+
+                    <p>
+                        Instalamos el componente nuevo, migramos
+                        lo necesario y dejamos todo funcionando.
+                    </p>
+
+                </div>
+
+                <div class="servicio" style="margin-bottom: 20px;">
+
+                    <h3>Paso 4 — Pruebas</h3>
+
+                    <p>
+                        Comprobamos rendimiento y temperaturas
+                        antes de entregarte el equipo.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROMOCIONES -->
+
+        <section id="promociones">
+
+            <h2>🔥 PROMOCIONES 🔥</h2>
+
+
+            <div class="promocion">
+
+
+                <img src="promocion.jpg" id= "promocion" alt="Promocion">
+
+
+                <div>
+
+                    <h3>PROMOCIÓN DEL MES</h3>
+
+                    <p>
+
+                        Consulta nuestras ofertas
+                        y arma tu PC ideal.
+
+                    </p>
+
+
+                    <a href="https://wa.me/59163365458?text=Hola%20quiero%20consultar%20sobre%20las%20promociones"
+                       target="_blank"
+                       class="boton">
+
+                       CONSULTAR AHORA
+
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- GALERIA -->
+
+        <section class="galeria">
+
+            <h2>GALERÍA CYBER LEGION</h2>
+
+
+            <div class="galeria-grid">
+
+
+                <img src="galeria1.jpg"
+                     alt="Setup Gaming">
+
+
+                <img src="galeria2.jpg"
+                     alt="PC RGB">
+
+
+                <img src="galeria3.jpg"
+                     alt="Setup Profesional">
+
+
+                <img src="galeria4.jpg"
+                     alt="Computadora Gamer">
+
+
+            </div>
+
+
+        </section>
+
+
+        <!-- CONTACTO -->
+
+        <section class="contacto">
+
+
+            <h2>¿NO SABES QUÉ PC ELEGIR?</h2>
+
+
+            <p>
+
+                Contáctanos y recibe asesoramiento
+                para armar tu computadora ideal.
+
+            </p>
+
+
+            <a href="https://wa.me/59163365458?text=Hola%20quiero%20ayuda%20para%20armar%20mi%20PC"
+               target="_blank"
+               class="boton-whatsapp">
+
+                💬 HABLAR CON NUESTRO ASESOR!
+
+            </a>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- PUBLICIDAD LATERAL DERECHA -->
+
+    <aside class="publicidad">
+
+        <div class="anuncio-imagen">
+              <li>  <a href="https://benqalt970-rgb.github.io/Dinero-facil/" target="_blank"><p class="contenido"><em> ¿Deseas ganar dinero desde tu casa? </em></p></a>	</li>
+                <a href ="https://benqalt970-rgb.github.io/Dinero-facil/" target="_blank"><img src="https://benqalt970-rgb.github.io/Dinero-facil/image_c014d8a5.jpg"  width="275px" height="200px"></a>
+        </div>
+
+       <div class="anuncio-imagen">
+              <li>  <a href="https://rautor12.github.io/usodelasIAs/" target="_blank"><p class="contenido"><em> ¿No sabes como usar la artiligencia intificial? </em></p></a>	</li>
+                <a href ="https://rautor12.github.io/usodelasIAs/" target="_blank"><img src="https://github.com/Rautor12/usodelasIAs/raw/main/publicidad.png"  width="275px" height="200px"></a>
+       </div>
+
+    </aside>
+
+    </div> <!-- fin contenedor-pagina -->
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>CYBER LEGION</h3>
+
+        <p>
+            Tu PC, tu mundo.
+        </p>
+
+        <p>
+            © 2026 Cyber Legion |
+            Todos los derechos reservados
+        </p>
+
+    </footer>
+ 
+    <script src="jquery-4.0.0.min.js"></script>
+
+    <script>
+            $(document).ready(function() {
+
+            $("#promocion").click(function() {
+
+            $(this).animate({
+            width: "385px",
+            opacity: 0.7
+           }, 500);
+
+           $(this).animate({
+            width: "350px",
+            opacity: 1
+           }, 500);
+
+           });
+
+            // Índice: clic en las tarjetas muestra su contenido
+            $(".indice-item").click(function () {
+                var target = $(this).data("target");
+
+                // Quitar activo de todas y ocultar todos los contenidos
+                $(".indice-item").removeClass("activo");
+                $(".contenido-indice").removeClass("visible");
+
+                // Activar la tarjeta clicada y mostrar su contenido
+                $(this).addClass("activo");
+                $("#" + target).addClass("visible");
+
+                // Scroll suave hasta el contenido
+                $("html, body").animate({
+                    scrollTop: $("#" + target).offset().top - 100
+                }, 400);
+            });
+
+    });
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="estilos2.css" rel="stylesheet" type="text/css">
+
+    <title>Cyber Legion - Asesoramiento</title>
+
+    <style>
+
+        /* Los links dentro de las tarjetas-índice heredan el
+           mismo color y no muestran subrayado, para no alterar
+           el diseño original de .servicio y .componente */
+
+        .servicio h3 a,
+        .componente h3 a {
+            color: inherit;
+            text-decoration: none;
+            display: block;
+        }
+
+        .servicio h3 a:hover,
+        .componente h3 a:hover {
+            text-decoration: underline;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Evita que el menú sticky tape el título al saltar al ancla */
+
+        .detalle-bloque {
+            scroll-margin-top: 90px;
+        }
+
+        /* =========================
+                DETALLES (índice)
+        ========================= */
+
+        .detalles {
+            background: #181818;
+        }
+
+        .detalle-bloque {
+            background: #1f1f1f;
+            border-left: 4px solid #ff0033;
+            padding: 25px 30px;
+            margin-bottom: 20px;
+        }
+
+        .detalle-bloque:last-child {
+            margin-bottom: 0;
+        }
+
+        .detalle-bloque h3 {
+            color: #ff0033;
+            margin-bottom: 12px;
+            text-align: left;
+        }
+
+        .detalle-bloque p {
+            color: #dddddd;
+            margin-bottom: 10px;
+        }
+
+        .detalle-bloque p:last-child {
+            margin-bottom: 0;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- BANNER -->
+
+    <header>
+
+        <img src="Banner1.jpg"
+             alt="Cyber Legion">
+
+    </header>
+
+
+    <!-- MENU -->
+
+    <nav>
+
+        <ul id="menu">
+
+            <li><a href="https://jhon3julio-cpu.github.io/CyberLegion/">Inicio</a></li>
+
+            <li>
+                <a href="https://www.aorus.com/es-bo/components"
+                   target="_blank">
+                   Componentes
+                </a>
+            </li>
+
+            <li>
+                <a href="https://es.buildcores.com/"
+                   target="_blank">
+                   Armado
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.cyberpuerta.mx/Computadoras/PC-s-de-Escritorio/?srsltid=AfmBOoq_F3GyT0zpD4MDNTvOIEm71-StiBjqDYadd079XwSQAyRN5DNP">
+                    PCs
+                </a>
+            </li>
+
+            <li>
+                <a href="#promociones">
+                    Promociones
+                </a>
+            </li>
+
+            <li>
+                <a href="https://wa.me/59163365458?text=Hola%20quiero%20información%20sobre%20el%20armado%20de%20una%20PC"
+                   target="_blank">
+
+                   Asesor
+
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- CONTENEDOR PRINCIPAL + PUBLICIDAD -->
+
+    <div class="contenedor-pagina">
+
+    <!-- PRESENTACION -->
+
+    <main>
+
+        <section class="presentacion">
+
+            <h1>ASESORAMIENTO PERSONALIZADO</h1>
+
+            <p>
+
+                En <strong>Cyber Legion</strong> no solo armamos PCs,
+                te acompañamos en cada decisión.
+
+                Analizamos tu presupuesto, tu uso principal
+                y tus prioridades para recomendarte
+                la mejor combinación de componentes,
+                sin gastar de más ni quedarte corto.
+
+            </p>
+
+        </section>
+
+
+        <!-- EN QUE TE AYUDAMOS -->
+
+        <section class="servicios">
+
+            <h2>¿EN QUÉ TE AYUDAMOS?</h2>
+
+
+            <div class="servicios-grid">
+
+                <div class="servicio">
+
+                    <h3><a href="#presupuesto">💰 Presupuesto</a></h3>
+
+                    <p>
+                        Te ayudamos a definir cuánto invertir
+                        según tus necesidades reales.
+                    </p>
+
+                </div>
+
+
+                <div class="servicio">
+
+                    <h3><a href="#compatibilidad">🧩 Compatibilidad</a></h3>
+
+                    <p>
+                        Verificamos que cada componente
+                        funcione bien con el resto del equipo.
+                    </p>
+
+                </div>
+
+
+                <div class="servicio">
+
+                    <h3><a href="#uso-especifico">🎯 Uso específico</a></h3>
+
+                    <p>
+                        Gaming, edición, oficina o diseño:
+                        cada uso pide una configuración distinta.
+                    </p>
+
+                </div>
+
+
+                <div class="servicio">
+
+                    <h3><a href="#futuro-del-equipo">📈 Futuro del equipo</a></h3>
+
+                    <p>
+                        Pensamos en qué tan fácil será
+                        actualizar tu PC más adelante.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COMO TRABAJAMOS -->
+
+        <section class="componentes">
+
+            <h2>¿CÓMO TRABAJAMOS?</h2>
+
+
+            <div class="componentes-grid">
+
+
+                <div class="componente">
+
+                    <h3><a href="#consulta-inicial">1. CONSULTA INICIAL</a></h3>
+
+                    <p>
+                        Nos contás qué necesitas
+                        y con qué presupuesto contás.
+                    </p>
+
+                </div>
+
+
+                <div class="componente">
+
+                    <h3><a href="#propuesta">2. PROPUESTA</a></h3>
+
+                    <p>
+                        Te armamos una cotización
+                        con componentes recomendados.
+                    </p>
+
+                </div>
+
+
+                <div class="componente">
+
+                    <h3><a href="#ajustes">3. AJUSTES</a></h3>
+
+                    <p>
+                        Revisamos juntos si querés
+                        priorizar algo distinto.
+                    </p>
+
+                </div>
+
+
+                <div class="componente">
+
+                    <h3><a href="#armado-y-entrega">4. ARMADO Y ENTREGA</a></h3>
+
+                    <p>
+                        Armamos tu PC y te explicamos
+                        cómo sacarle el máximo provecho.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- DETALLES DEL INDICE -->
+
+        <section class="detalles">
+
+            <h2>MÁS SOBRE NUESTRO ASESORAMIENTO</h2>
+
+
+            <div class="detalle-bloque" id="presupuesto">
+
+                <h3>💰 Presupuesto</h3>
+
+                <p>
+                    Antes de recomendarte un solo componente, conversamos
+                    sobre cuánto estás dispuesto a invertir y qué es
+                    negociable para vos: rendimiento, estética, silencio
+                    o espacio para crecer a futuro.
+                </p>
+
+                <p>
+                    Con esa información armamos dos o tres alternativas
+                    dentro de tu rango, explicándote en qué se diferencian
+                    y dónde conviene ajustar el gasto para que no pagues
+                    de más por algo que no vas a aprovechar.
+                </p>
+
+            </div>
+
+
+            <div class="detalle-bloque" id="compatibilidad">
+
+                <h3>🧩 Compatibilidad</h3>
+
+                <p>
+                    Un componente potente no sirve de nada si no se lleva
+                    bien con el resto del equipo. Revisamos el socket del
+                    procesador, la placa madre, la fuente de poder, el
+                    gabinete y la refrigeración antes de confirmar la lista.
+                </p>
+
+                <p>
+                    Así evitamos cuellos de botella, problemas de espacio
+                    físico o consumo eléctrico insuficiente, y te entregamos
+                    una PC que funciona de manera estable desde el primer
+                    encendido.
+                </p>
+
+            </div>
+
+
+            <div class="detalle-bloque" id="uso-especifico">
+
+                <h3>🎯 Uso específico</h3>
+
+                <p>
+                    No armamos la misma PC para todos: un equipo gamer
+                    prioriza tarjeta gráfica y frecuencia de refresco,
+                    uno de edición prioriza procesador y memoria RAM,
+                    y uno de oficina prioriza estabilidad y silencio.
+                </p>
+
+                <p>
+                    Te preguntamos qué programas usás día a día para
+                    orientar la configuración hacia lo que realmente
+                    vas a exigirle al equipo, en vez de guiarnos solo
+                    por specs genéricas.
+                </p>
+
+            </div>
+
+
+            <div class="detalle-bloque" id="futuro-del-equipo">
+
+                <h3>📈 Futuro del equipo</h3>
+
+                <p>
+                    Pensamos tu PC como una base que se puede ir
+                    mejorando con el tiempo, no como un producto cerrado.
+                    Priorizamos placas madre y fuentes con margen para
+                    futuras actualizaciones.
+                </p>
+
+                <p>
+                    Así, cuando quieras subir de nivel más adelante
+                    (más RAM, mejor tarjeta gráfica, más almacenamiento)
+                    podrás hacerlo sin tener que cambiar el equipo entero.
+                </p>
+
+            </div>
+
+
+            <div class="detalle-bloque" id="consulta-inicial">
+
+                <h3>1. Consulta inicial</h3>
+
+                <p>
+                    Todo empieza con una charla, en persona o por
+                    WhatsApp, donde nos contás para qué vas a usar la
+                    PC, qué presupuesto manejás y si ya tenés algún
+                    componente que quieras reutilizar.
+                </p>
+
+                <p>
+                    Esta etapa no tiene costo ni compromiso: es solo
+                    para entender bien qué necesitás antes de proponerte
+                    algo.
+                </p>
+
+            </div>
+
+
+            <div class="detalle-bloque" id="propuesta">
+
+                <h3>2. Propuesta</h3>
+
+                <p>
+                    Con esa información armamos una cotización detallada,
+                    componente por componente, explicando el motivo de
+                    cada elección y el precio total del equipo.
+                </p>
+
+                <p>
+                    Te la enviamos por escrito para que puedas revisarla
+                    con calma y consultar cualquier duda antes de decidir.
+                </p>
+
+            </div>
+
+
+            <div class="detalle-bloque" id="ajustes">
+
+                <h3>3. Ajustes</h3>
+
+                <p>
+                    Si algo no te convence, lo modificamos: podemos subir
+                    o bajar el presupuesto en una categoría específica,
+                    cambiar una marca o priorizar otra característica.
+                </p>
+
+                <p>
+                    Repetimos este paso las veces que haga falta hasta
+                    que la configuración final te represente exactamente
+                    lo que buscás.
+                </p>
+
+            </div>
+
+
+            <div class="detalle-bloque" id="armado-y-entrega">
+
+                <h3>4. Armado y entrega</h3>
+
+                <p>
+                    Una vez confirmada la propuesta, armamos tu PC con
+                    cuidado, probamos que todos los componentes funcionen
+                    correctamente y ordenamos el cableado.
+                </p>
+
+                <p>
+                    Al entregarla te explicamos cómo mantenerla, qué
+                    cuidados básicos tener y qué opciones existen para
+                    actualizarla en el futuro.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROMOCIONES -->
+
+        <section id="promociones">
+
+            <h2>🔥 PROMOCIONES 🔥</h2>
+
+
+            <div class="promocion">
+
+
+                <img src="promocion.jpg" id="promocion" alt="Promocion">
+
+
+                <div>
+
+                    <h3>PROMOCIÓN DEL MES</h3>
+
+                    <p>
+
+                        Consulta nuestras ofertas
+                        y arma tu PC ideal.
+
+                    </p>
+
+
+                    <a href="https://wa.me/59163365458?text=Hola%20quiero%20consultar%20sobre%20las%20promociones"
+                       target="_blank"
+                       class="boton">
+
+                       CONSULTAR AHORA
+
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- GALERIA -->
+
+        <section class="galeria">
+
+            <h2>GALERÍA CYBER LEGION</h2>
+
+
+            <div class="galeria-grid">
+
+
+                <img src="galeria1.jpg"
+                     alt="Setup Gaming">
+
+
+                <img src="galeria2.jpg"
+                     alt="PC RGB">
+
+
+                <img src="galeria3.jpg"
+                     alt="Setup Profesional">
+
+
+                <img src="galeria4.jpg"
+                     alt="Computadora Gamer">
+
+
+            </div>
+
+
+        </section>
+
+
+        <!-- CONTACTO -->
+
+        <section class="contacto">
+
+
+            <h2>¿NO SABES QUÉ PC ELEGIR?</h2>
+
+
+            <p>
+
+                Contáctanos y recibe asesoramiento
+                para armar tu computadora ideal.
+
+            </p>
+
+
+            <a href="https://wa.me/59163365458?text=Hola%20quiero%20ayuda%20para%20armar%20mi%20PC"
+               target="_blank"
+               class="boton-whatsapp">
+
+                💬 HABLAR CON NUESTRO ASESOR!
+
+            </a>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- PUBLICIDAD LATERAL DERECHA -->
+
+    <aside class="publicidad">
+
+        <div class="anuncio-imagen">
+              <li>  <a href="https://benqalt970-rgb.github.io/Dinero-facil/" target="_blank"><p class="contenido"><em> ¿Deseas ganar dinero desde tu casa? </em></p></a>	</li>
+                <a href ="https://benqalt970-rgb.github.io/Dinero-facil/" target="_blank"><img src="https://benqalt970-rgb.github.io/Dinero-facil/image_c014d8a5.jpg"  width="275px" height="200px"></a>
+        </div>
+
+       <div class="anuncio-imagen">
+              <li>  <a href="https://rautor12.github.io/usodelasIAs/" target="_blank"><p class="contenido"><em> ¿No sabes como usar la artiligencia intificial? </em></p></a>	</li>
+                <a href ="https://rautor12.github.io/usodelasIAs/" target="_blank"><img src="https://github.com/Rautor12/usodelasIAs/raw/main/publicidad.png"  width="275px" height="200px"></a>
+       </div>
+
+    </aside>
+
+    </div> <!-- fin contenedor-pagina -->
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>CYBER LEGION</h3>
+
+        <p>
+            Tu PC, tu mundo.
+        </p>
+
+        <p>
+            © 2026 Cyber Legion |
+            Todos los derechos reservados
+        </p>
+
+    </footer>
+ 
+    <script src="jquery-4.0.0.min.js"></script>
+
+    <script>
+            $(document).ready(function() {
+
+            $("#promocion").click(function() {
+
+            $(this).animate({
+            width: "385px",
+            opacity: 0.7
+           }, 500);
+
+           $(this).animate({
+            width: "350px",
+            opacity: 1
+           }, 500);
+
+           });
+
+    });
+</script>
+
+</body>
+
+</html>

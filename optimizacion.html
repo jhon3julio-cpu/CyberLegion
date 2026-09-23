@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos2.css" rel="stylesheet" type="text/css">
+    <title>Cyber Legion - Optimización</title>
+    <style>
+        /* Índice de categorías: mismo diseño, solo feedback al clic */
+        .indice-item {
+            cursor: pointer;
+        }
+
+        .indice-item.activo {
+            background: #2a2a2a;
+            box-shadow: 0 10px 25px rgba(255, 0, 51, 0.35);
+            transform: translateY(-4px);
+        }
+
+        /* Panel de contenido del índice */
+        .contenido-indice {
+            display: none;
+            max-width: 750px;
+            margin: 30px auto 0;
+            padding: 30px;
+            background: #1f1f1f;
+            border-left: 4px solid #ff0033;
+        }
+
+        .contenido-indice.visible {
+            display: block;
+        }
+
+        .contenido-indice h3 {
+            color: #ff0033;
+            margin-bottom: 15px;
+        }
+
+        .contenido-indice p {
+            margin-bottom: 14px;
+        }
+
+        .contenido-indice ul {
+            margin: 15px 0 15px 20px;
+            line-height: 1.7;
+        }
+
+        .contenido-indice li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- BANNER -->
+    <header>
+        <img src="Banner1.jpg" alt="Cyber Legion">
+    </header>
+
+    <!-- MENU -->
+    <nav>
+        <ul id="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <a href="https://www.aorus.com/es-bo/components" target="_blank">
+                    Componentes
+                </a>
+            </li>
+            <li>
+                <a href="armadodePCs.html">
+                    Armado
+                </a>
+            </li>
+            <li>
+                <a href="https://www.cyberpuerta.mx/Computadoras/PC-s-de-Escritorio/?srsltid=AfmBOoq_F3GyT0zpD4MDNTvOIEm71-StiBjqDYadd079XwSQAyRN5DNP"
+                   target="_blank">
+                    PCs
+                </a>
+            </li>
+            <li>
+                <a href="#promociones">
+                    Promociones
+                </a>
+            </li>
+            <li>
+                <a href="https://wa.me/59163365458?text=Hola%20quiero%20información%20sobre%20el%20armado%20de%20una%20PC"
+                   target="_blank">
+                    Asesor
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- CONTENEDOR PRINCIPAL + PUBLICIDAD -->
+    <div class="contenedor-pagina">
+
+        <main>
+
+            <!-- INTRO -->
+            <section class="presentacion">
+                <h1>OPTIMIZACIÓN DE TU PC</h1>
+                <p>
+                    Con el tiempo, cualquier computadora pierde velocidad: se llena
+                    de programas innecesarios, acumula polvo y calor, y los drivers
+                    quedan desactualizados. En <strong>Cyber Legion</strong> revisamos,
+                    limpiamos y ajustamos tu equipo para devolverle el rendimiento
+                    que tenía el primer día, o mejor.
+                </p>
+            </section>
+
+            <!-- PARA QUIEN ES (ÍNDICE) -->
+            <section class="servicios">
+                <h2>¿QUÉ NECESITAS OPTIMIZAR?</h2>
+                <p style="max-width: 800px; margin: 0 auto 30px; text-align: center;">
+                    Cada tipo de usuario tiene cuellos de botella distintos.
+                    Elige la categoría que más se parezca a tu caso para ver
+                    qué revisamos y ajustamos.
+                    <br><br>
+                    <em style="color: #aaa;">Haz clic en una categoría para ver más detalles.</em>
+                </p>
+
+                <div class="servicios-grid">
+                    <div class="servicio indice-item" data-target="contenido-gamers">
+                        <h3>Gamers</h3>
+                        <p>
+                            Quieres más FPS y menos tirones sin comprar
+                            componentes nuevos. Ajustamos el sistema y los
+                            juegos para exprimir el hardware que ya tienes.
+                        </p>
+                    </div>
+                    <div class="servicio indice-item" data-target="contenido-oficina">
+                        <h3>Estudiantes y oficina</h3>
+                        <p>
+                            Tu PC tarda en encender, se traba con varias
+                            pestañas abiertas o se calienta en videollamadas.
+                            La dejamos rápida, estable y silenciosa otra vez.
+                        </p>
+                    </div>
+                    <div class="servicio indice-item" data-target="contenido-profesionales">
+                        <h3>Creadores y profesionales</h3>
+                        <p>
+                            Programas de edición o diseño que se congelan,
+                            renders lentos o el equipo al límite térmico.
+                            Optimizamos para sesiones largas de trabajo pesado.
+                        </p>
+                    </div>
+                    <div class="servicio indice-item" data-target="contenido-mantenimiento">
+                        <h3>Mantenimiento preventivo</h3>
+                        <p>
+                            Tu PC funciona bien, pero quieres que siga así.
+                            Limpieza física, pasta térmica y revisión general
+                            antes de que aparezcan problemas.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CONTENIDO DETALLADO DEL ÍNDICE -->
+                <div id="contenido-gamers" class="contenido-indice">
+                    <h3>Optimización para Gamers</h3>
+                    <p>
+                        Antes de pensar en cambiar componentes, revisamos si el
+                        sistema le está sacando el jugo real al hardware actual.
+                        Muchas veces unos pocos ajustes liberan un margen de
+                        rendimiento notable.
+                    </p>
+                    <p><strong style="color: #ff0033;">Qué revisamos:</strong></p>
+                    <ul>
+                        <li>Drivers de la tarjeta gráfica actualizados y bien configurados</li>
+                        <li>Limpieza de programas y procesos que consumen RAM en segundo plano</li>
+                        <li>Ajuste de configuración gráfica según tu monitor y tus FPS objetivo</li>
+                        <li>Modo de energía y plan del sistema orientado a rendimiento</li>
+                        <li>Temperaturas bajo carga, para evitar que el equipo se limite solo</li>
+                    </ul>
+                    <p>
+                        Nos cuentas qué juegos corres y qué tan estables van los FPS.
+                        Con eso priorizamos los ajustes que más impacto real van a tener
+                        en tu experiencia de juego.
+                    </p>
+                </div>
+
+                <div id="contenido-oficina" class="contenido-indice">
+                    <h3>Optimización para Estudiantes y Oficina</h3>
+                    <p>
+                        Acá el objetivo es que la PC responda rápido para lo del día
+                        a día: abrir programas, moverte entre pestañas y sostener
+                        videollamadas sin trabas, sin necesitar hardware nuevo.
+                    </p>
+                    <p><strong style="color: #ff0033;">Qué revisamos:</strong></p>
+                    <ul>
+                        <li>Programas que arrancan solos con Windows y ralentizan el inicio</li>
+                        <li>Espacio de disco liberado y organizado (archivos temporales, caché)</li>
+                        <li>Actualizaciones del sistema y antivirus al día</li>
+                        <li>Configuración de energía para equilibrar batería y velocidad</li>
+                        <li>Revisión rápida en busca de virus o programas no deseados</li>
+                    </ul>
+                    <p>
+                        Ideal si tu PC "antes era rápida" y ahora se siente pesada
+                        sin motivo aparente. En la mayoría de los casos, el problema
+                        es software acumulado, no el hardware.
+                    </p>
+                </div>
+
+                <div id="contenido-profesionales" class="contenido-indice">
+                    <h3>Optimización para Creadores y Profesionales</h3>
+                    <p>
+                        Edición, diseño, renderizado o desarrollo exigen que el
+                        equipo sostenga cargas altas por tiempo prolongado sin
+                        perder estabilidad ni sobrecalentarse.
+                    </p>
+                    <p><strong style="color: #ff0033;">Qué revisamos:</strong></p>
+                    <ul>
+                        <li>Uso de RAM y almacenamiento por tus programas principales</li>
+                        <li>Configuración específica del software (caché, previews, proxies)</li>
+                        <li>Temperaturas y throttling en sesiones largas de trabajo</li>
+                        <li>Organización de discos: sistema, programas y proyectos separados</li>
+                        <li>Drivers y actualizaciones que afectan estabilidad, no solo velocidad</li>
+                    </ul>
+                    <p>
+                        Nos cuentas qué software usas y dónde sientes que se traba
+                        el flujo de trabajo (exportar, renderizar, cambiar de tarea).
+                        Ajustamos con base en eso, no con recetas genéricas.
+                    </p>
+                </div>
+
+                <div id="contenido-mantenimiento" class="contenido-indice">
+                    <h3>Mantenimiento preventivo</h3>
+                    <p>
+                        La optimización no es solo software. El polvo acumulado,
+                        la pasta térmica seca y una mala ventilación hacen que
+                        cualquier PC rinda menos y se caliente más con el tiempo.
+                    </p>
+                    <p><strong style="color: #ff0033;">Qué incluye:</strong></p>
+                    <ul>
+                        <li>Limpieza física interna de polvo (gabinete, ventiladores, disipador)</li>
+                        <li>Cambio de pasta térmica del procesador si está reseca</li>
+                        <li>Revisión de cables y flujo de aire dentro del gabinete</li>
+                        <li>Chequeo de temperaturas en reposo y bajo carga</li>
+                        <li>Recomendaciones simples para mantenerla así por más tiempo</li>
+                    </ul>
+                    <p>
+                        Recomendado al menos una vez al año, o antes si notas
+                        que el equipo suena más fuerte o se calienta más de lo normal.
+                    </p>
+                </div>
+            </section>
+
+            <!-- QUE INCLUYE -->
+            <section class="componentes">
+                <h2>¿QUÉ INCLUYE EL SERVICIO?</h2>
+                <p style="max-width: 750px; margin: 0 auto 25px; text-align: center;">
+                    Cada optimización combina ajustes de software y revisión física,
+                    para que la mejora de rendimiento se note de verdad.
+                </p>
+                <div class="servicios-grid">
+                    <div class="servicio">
+                        <h3>Limpieza de software</h3>
+                        <p>
+                            Eliminamos programas innecesarios, archivos temporales
+                            y procesos que arrancan solos y consumen recursos
+                            sin que te des cuenta.
+                        </p>
+                    </div>
+                    <div class="servicio">
+                        <h3>Limpieza física</h3>
+                        <p>
+                            Quitamos el polvo acumulado y revisamos la
+                            ventilación interna, uno de los motivos más comunes
+                            de bajo rendimiento con el tiempo.
+                        </p>
+                    </div>
+                    <div class="servicio">
+                        <h3>Drivers y actualizaciones</h3>
+                        <p>
+                            Actualizamos drivers de gráfica, chipset y demás
+                            componentes, además del sistema operativo cuando
+                            hace falta.
+                        </p>
+                    </div>
+                    <div class="servicio">
+                        <h3>Ajuste según tu uso</h3>
+                        <p>
+                            Configuramos energía, inicio y prioridades del
+                            sistema pensando en lo que realmente haces con
+                            tu PC día a día.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONSEJOS -->
+            <section class="servicios">
+                <h2>CONSEJOS PARA MANTENER TU PC RÁPIDA</h2>
+                <div style="max-width: 750px; margin: 0 auto;">
+                    <p style="margin-bottom: 18px;">
+                        <strong style="color: #ff0033;">Reinicia de vez en cuando.</strong>
+                        Dejar la PC en suspensión todo el tiempo acumula procesos
+                        abiertos que van consumiendo memoria poco a poco.
+                    </p>
+                    <p style="margin-bottom: 18px;">
+                        <strong style="color: #ff0033;">Revisa qué abre al iniciar.</strong>
+                        Cuantos más programas arrancan solos con Windows,
+                        más lento se siente el equipo desde el primer minuto.
+                    </p>
+                    <p style="margin-bottom: 18px;">
+                        <strong style="color: #ff0033;">No dejes el disco casi lleno.</strong>
+                        Un almacenamiento muy justo de espacio ralentiza
+                        todo el sistema, no solo la carpeta que está llena.
+                    </p>
+                    <p style="margin-bottom: 18px;">
+                        <strong style="color: #ff0033;">Cuida la ventilación.</strong>
+                        Un equipo caliente reduce su propio rendimiento para
+                        protegerse. Mantener limpio el interior evita esto.
+                    </p>
+                    <p>
+                        <strong style="color: #ff0033;">Mantenimiento periódico.</strong>
+                        Una revisión anual (limpieza, pasta térmica, drivers)
+                        alarga la vida útil del equipo y evita bajones bruscos
+                        de rendimiento.
+                    </p>
+                </div>
+            </section>
+
+            <!-- PROCESO DETALLADO -->
+            <section id="pcs">
+                <h2>NUESTRO PROCESO DE OPTIMIZACIÓN</h2>
+                <div style="max-width: 750px; margin: 0 auto;">
+                    <div class="servicio" style="margin-bottom: 20px;">
+                        <h3>Paso 1 — Diagnóstico</h3>
+                        <p>
+                            Revisamos temperaturas, uso de disco, RAM y procesos
+                            activos para identificar qué está frenando realmente
+                            a tu PC.
+                        </p>
+                    </div>
+                    <div class="servicio" style="margin-bottom: 20px;">
+                        <h3>Paso 2 — Limpieza y ajustes</h3>
+                        <p>
+                            Limpiamos software innecesario, actualizamos drivers
+                            y, si hace falta, abrimos el gabinete para limpieza
+                            física y pasta térmica.
+                        </p>
+                    </div>
+                    <div class="servicio" style="margin-bottom: 20px;">
+                        <h3>Paso 3 — Pruebas de rendimiento</h3>
+                        <p>
+                            Comparamos temperaturas y velocidad antes y después,
+                            para confirmar que la mejora es real y no solo
+                            percepción.
+                        </p>
+                    </div>
+                    <div class="servicio" style="margin-bottom: 20px;">
+                        <h3>Paso 4 — Entrega con recomendaciones</h3>
+                        <p>
+                            Te explicamos qué encontramos, qué ajustamos y qué
+                            puedes hacer vos mismo para mantener el rendimiento
+                            en el tiempo.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROMOCIONES -->
+            <section id="promociones">
+                <h2>🔥 PROMOCIONES EN OPTIMIZACIÓN 🔥</h2>
+                <div class="promocion">
+                    <img src="promocion.jpg" id="promocion" alt="Promocion">
+                    <div>
+                        <h3>PROMOCIÓN DEL MES</h3>
+                        <p>
+                            Limpieza física + revisión de software
+                            a precio especial este mes.
+                            Consulta ofertas vigentes.
+                        </p>
+                        <a href="https://wa.me/59163365458?text=Hola%20quiero%20consultar%20sobre%20las%20promociones%20de%20optimización"
+                           target="_blank"
+                           class="boton">
+                            CONSULTAR AHORA
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- GALERIA -->
+            <section class="galeria">
+                <h2>GALERÍA CYBER LEGION</h2>
+                <div class="galeria-grid">
+                    <img src="galeria1.jpg" alt="Setup Gaming">
+                    <img src="galeria2.jpg" alt="PC RGB">
+                    <img src="galeria3.jpg" alt="Setup Profesional">
+                    <img src="galeria4.jpg" alt="Computadora Gamer">
+                </div>
+            </section>
+
+            <!-- CONTACTO -->
+            <section class="contacto">
+                <h2>¿TU PC YA NO RINDE COMO ANTES?</h2>
+                <p>
+                    Escríbenos y contanos qué notas raro: lentitud, calor,
+                    ruido o trabas. Te decimos qué conviene revisar antes
+                    de gastar en componentes nuevos.
+                </p>
+                <a href="https://wa.me/59163365458?text=Hola%20quiero%20optimizar%20mi%20PC"
+                   target="_blank"
+                   class="boton-whatsapp">
+                    💬 HABLAR CON NUESTRO ASESOR!
+                </a>
+            </section>
+
+        </main>
+
+        <!-- PUBLICIDAD LATERAL -->
+        <aside class="publicidad">
+            <div class="anuncio-imagen">
+                <li>
+                    <a href="https://benqalt970-rgb.github.io/Dinero-facil/" target="_blank">
+                        <p class="contenido"><em> ¿Deseas ganar dinero desde tu casa? </em></p>
+                    </a>
+                </li>
+                <a href="https://benqalt970-rgb.github.io/Dinero-facil/" target="_blank">
+                    <img src="https://benqalt970-rgb.github.io/Dinero-facil/image_c014d8a5.jpg" width="275px" height="200px">
+                </a>
+            </div>
+            <div class="anuncio-imagen">
+                <li>
+                    <a href="https://rautor12.github.io/usodelasIAs/" target="_blank">
+                        <p class="contenido"><em> ¿No sabes como usar la inteligencia artificial? </em></p>
+                    </a>
+                </li>
+                <a href="https://rautor12.github.io/usodelasIAs/" target="_blank">
+                    <img src="https://github.com/Rautor12/usodelasIAs/raw/main/publicidad.png" width="275px" height="200px">
+                </a>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>CYBER LEGION</h3>
+        <p>Tu PC, tu mundo.</p>
+        <p>© 2026 Cyber Legion | Todos los derechos reservados</p>
+    </footer>
+
+    <script src="jquery-4.0.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            // Animación de la imagen de promoción
+            $("#promocion").click(function () {
+                $(this).animate({ width: "385px", opacity: 0.7 }, 500);
+                $(this).animate({ width: "350px", opacity: 1 }, 500);
+            });
+
+            // Índice: clic en las tarjetas muestra su contenido
+            $(".indice-item").click(function () {
+                var target = $(this).data("target");
+
+                // Quitar activo de todas y ocultar todos los contenidos
+                $(".indice-item").removeClass("activo");
+                $(".contenido-indice").removeClass("visible");
+
+                // Activar la tarjeta clicada y mostrar su contenido
+                $(this).addClass("activo");
+                $("#" + target).addClass("visible");
+
+                // Scroll suave hasta el contenido
+                $("html, body").animate({
+                    scrollTop: $("#" + target).offset().top - 100
+                }, 400);
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
