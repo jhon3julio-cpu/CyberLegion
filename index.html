@@ -8,14 +8,22 @@
 
     <link href="estilos.css" rel="stylesheet" type="text/css">
 
+    <!-- Google Fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
     <title>Cyber Legion - Armado de PCs</title>
 
     <style>
         /* Las tarjetas de servicios ahora son links completos,
            pero deben verse igual que antes */
-        a.servicio {
+        a.servicio,
+        a.pc-card,
+        a.componente {
             color: inherit;
             text-decoration: none;
+            display: block;
         }
     </style>
 </head>
@@ -39,7 +47,7 @@
 
         <ul id="menu">
 
-            <li><a href="https://jhon3julio-cpu.github.io/CyberLegion/">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
 
             <li>
                 <a href="https://www.aorus.com/es-bo/components"
@@ -181,7 +189,7 @@
 
                 <!-- PC GAMER -->
 
-                <div class="pc-card">
+                <a class="pc-card" href= "PCsGamers.html">
 
 
                     <img src="pc-gamer.jpg"
@@ -194,12 +202,12 @@
                         y alto rendimiento.
                     </p>
 
-                </div>
+                </a>
 
 
                 <!-- PC OFICINA -->
 
-                <div class="pc-card">
+                <a class="pc-card" href="PCsOficina.html">
 
 
                     <img src="pc-oficina.jpg"
@@ -212,12 +220,12 @@
                         trabajo y uso diario.
                     </p>
 
-                </div>
+                </a>
 
 
                 <!-- PC PROFESIONAL -->
 
-                <div class="pc-card">
+                <a class="pc-card" href="PCsProfesional.html">
 
 
                     <img src="pc-profesional.jpg"
@@ -230,7 +238,7 @@
                         diseño y productividad.
                     </p>
 
-                </div>
+                </a>
 
 
             </div>
@@ -248,44 +256,44 @@
             <div class="componentes-grid">
 
 
-                <div class="componente">
+                <a class="componente" href="procesadores.html">
 
                     <img src="procesador.jpg"
                          alt="Procesadores">
 
                     <h3>PROCESADORES</h3>
 
-                </div>
+                </a>
 
 
-                <div class="componente">
+                <a class="componente" href="graficas.html">
 
                     <img src="tarjeta-grafica.jpg"
                          alt="Tarjetas gráficas">
 
                     <h3>TARJETAS GRÁFICAS</h3>
 
-                </div>
+                </a>
 
 
-                <div class="componente">
+                <a class="componente" href="RAM.html">
 
                     <img src="ram.jpg"
                          alt="Memoria RAM">
 
                     <h3>MEMORIA RAM</h3>
 
-                </div>
+                </a>
 
 
-                <div class="componente">
+                <a class="componente" href="almacenamiento.html">
 
                     <img src="ssd.jpg"
                          alt="SSD">
 
                     <h3>ALMACENAMIENTO SSD</h3>
 
-                </div>
+                </a>
 
 
             </div>
@@ -341,24 +349,26 @@
             <h2>GALERÍA CYBER LEGION</h2>
 
 
-            <div class="galeria-grid">
+            <div class="carrusel">
 
+                <div class="carrusel-track">
 
-                <img src="galeria1.jpg"
-                     alt="Setup Gaming">
+                    <img src="galeria1.jpg" alt="Setup Gaming" class="carrusel-slide">
+                    <img src="galeria2.jpg" alt="PC RGB" class="carrusel-slide">
+                    <img src="galeria3.jpg" alt="Setup Profesional" class="carrusel-slide">
+                    <img src="galeria4.jpg" alt="Computadora Gamer" class="carrusel-slide">
 
+                </div>
 
-                <img src="galeria2.jpg"
-                     alt="PC RGB">
+                <button class="carrusel-btn prev" aria-label="Anterior">&#10094;</button>
+                <button class="carrusel-btn next" aria-label="Siguiente">&#10095;</button>
 
-
-                <img src="galeria3.jpg"
-                     alt="Setup Profesional">
-
-
-                <img src="galeria4.jpg"
-                     alt="Computadora Gamer">
-
+                <div class="carrusel-dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
 
             </div>
 
@@ -433,6 +443,7 @@
     </footer>
  
     <script src="jquery-4.0.0.min.js"></script>
+    <script src="carrusel.js"></script>
 
     <script>
             $(document).ready(function() {
