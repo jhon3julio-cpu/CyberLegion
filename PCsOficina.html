@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="estilos2.css" rel="stylesheet" type="text/css">
+
+    <!-- Google Fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Cyber Legion - Armado de PCs</title>
+
+    <style>
+        /* Las tarjetas de servicios ahora son links completos,
+           pero deben verse igual que antes */
+        a.servicio {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* Índice de PCs: mismo diseño, feedback al clic */
+        .indice-item {
+            cursor: pointer;
+        }
+
+        .indice-item.activo {
+            background: #2a2a2a;
+            box-shadow: 0 10px 25px rgba(255, 0, 51, 0.35);
+            transform: translateY(-4px);
+            border-color: #ff0033;
+        }
+
+        .contenido-indice {
+            display: none;
+            max-width: 750px;
+            margin: 30px auto 0;
+            padding: 30px;
+            background: #1f1f1f;
+            border-left: 4px solid #ff0033;
+        }
+
+        .contenido-indice.visible {
+            display: block;
+        }
+
+        .contenido-indice h3 {
+            color: #ff0033;
+            margin-bottom: 15px;
+        }
+
+        .contenido-indice p {
+            margin-bottom: 14px;
+        }
+
+        .contenido-indice ul {
+            margin: 15px 0 15px 20px;
+            line-height: 1.7;
+        }
+
+        .contenido-indice li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- BANNER -->
+
+    <header>
+
+        <img src="Banner1.jpg"
+             alt="Cyber Legion">
+
+    </header>
+
+
+    <!-- MENU -->
+
+    <nav>
+
+        <ul id="menu">
+
+            <li><a href="https://jhon3julio-cpu.github.io/CyberLegion/">Inicio</a></li>
+
+            <li>
+                <a href="https://www.aorus.com/es-bo/components"
+                   target="_blank">
+                   Componentes
+                </a>
+            </li>
+
+            <li>
+                <a href="https://es.buildcores.com/"
+                   target="_blank">
+                   Armado
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.cyberpuerta.mx/Computadoras/PC-s-de-Escritorio/?srsltid=AfmBOoq_F3GyT0zpD4MDNTvOIEm71-StiBjqDYadd079XwSQAyRN5DNP">
+                    PCs
+                </a>
+            </li>
+
+            <li>
+                <a href="#promociones">
+                    Promociones
+                </a>
+            </li>
+
+            <li>
+                <a href="https://wa.me/59163365458?text=Hola%20quiero%20información%20sobre%20el%20armado%20de%20una%20PC"
+                   target="_blank">
+
+                   Asesor
+
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- CONTENEDOR PRINCIPAL + PUBLICIDAD -->
+
+    <div class="contenedor-pagina">
+
+    <!-- PRESENTACION -->
+
+    <main>
+
+        <!-- PRESENTACION -->
+
+        <section class="presentacion">
+
+            <h1>PCs DE OFICINA PARA TRABAJAR SIN COMPLICACIONES</h1>
+
+            <p>
+
+                Una <strong>PC de oficina</strong> está pensada para
+                que el trabajo diario fluya sin trabas: encender rápido,
+                moverte entre varios programas y pestañas sin lag, y
+                sostener videollamadas sin que el equipo se agite.
+
+                No necesita una tarjeta gráfica de gama alta ni
+                refrigeración exagerada; en cambio priorizamos
+                estabilidad, almacenamiento SSD, silencio y un
+                precio accesible, sin gastar en potencia que no vas
+                a usar.
+
+            </p>
+
+        </section>
+
+
+        <!-- CATALOGO -->
+
+        <section id="pcs">
+
+            <h2>NUESTRO CATÁLOGO DE PCs DE OFICINA</h2>
+
+            <p style="max-width: 750px; margin: 0 auto 30px; text-align: center;">
+                Estos son algunos de los equipos que armamos.
+                Los precios son referenciales; pueden variar según
+                disponibilidad de componentes. Escríbenos para
+                confirmar specs exactas y stock.
+            </p>
+
+
+            <div class="pcs-grid">
+
+
+                <!-- PC 1 -->
+
+                <div class="pc-card indice-item" data-target="contenido-oficina-1">
+
+                    <img src="pc-oficina-1.jpg" alt="PC Oficina City View">
+
+                    <h3>CITY VIEW</h3>
+
+                    <p>
+                        Equipo de oficina completo con monitor,
+                        teclado y mouse incluidos. Listo para usar.
+                    </p>
+
+                    <p style="color: #ff0033; font-weight: bold; font-size: 18px;">
+                        Bs. 3.500
+                    </p>
+
+                </div>
+
+
+                <!-- PC 2 -->
+
+                <div class="pc-card indice-item" data-target="contenido-oficina-2">
+
+                    <img src="pc-oficina-2.jpg" alt="PC Oficina Slim Desk">
+
+                    <h3>SLIM DESK</h3>
+
+                    <p>
+                        Formato compacto tipo SFF, ideal si el espacio
+                        del escritorio es reducido. Silencioso y eficiente.
+                    </p>
+
+                    <p style="color: #ff0033; font-weight: bold; font-size: 18px;">
+                        Bs. 3.900
+                    </p>
+
+                </div>
+
+
+                <!-- PC 3 -->
+
+                <div class="pc-card indice-item" data-target="contenido-oficina-3">
+
+                    <img src="pc-oficina-3.jpg" alt="PC Oficina Classic Ten">
+
+                    <h3>CLASSIC TEN</h3>
+
+                    <p>
+                        Opción clásica y confiable con Windows 10,
+                        perfecta para tareas administrativas diarias.
+                    </p>
+
+                    <p style="color: #ff0033; font-weight: bold; font-size: 18px;">
+                        Bs. 3.200
+                    </p>
+
+                </div>
+
+
+                <!-- PC 4 -->
+
+                <div class="pc-card indice-item" data-target="contenido-oficina-4">
+
+                    <img src="pc-oficina-4.jpg" alt="PC Oficina Green Valley">
+
+                    <h3>GREEN VALLEY</h3>
+
+                    <p>
+                        Incluye parlantes, teclado y mouse.
+                        Un combo completo para empezar a trabajar ya.
+                    </p>
+
+                    <p style="color: #ff0033; font-weight: bold; font-size: 18px;">
+                        Bs. 3.700
+                    </p>
+
+                </div>
+
+
+                <!-- PC 5 -->
+
+                <div class="pc-card indice-item" data-target="contenido-oficina-5">
+
+                    <img src="pc-oficina-5.jpg" alt="PC Oficina Skyline">
+
+                    <h3>SKYLINE</h3>
+
+                    <p>
+                        Torre amplia con buena ventilación,
+                        pensada para uso prolongado sin recalentarse.
+                    </p>
+
+                    <p style="color: #ff0033; font-weight: bold; font-size: 18px;">
+                        Bs. 3.400
+                    </p>
+
+                </div>
+
+
+                <!-- PC 6 -->
+
+                <div class="pc-card indice-item" data-target="contenido-oficina-6">
+
+                    <img src="pc-oficina-6.jpg" alt="PC Oficina Vision Plus">
+
+                    <h3>VISION PLUS</h3>
+
+                    <p>
+                        Monitor más grande incluido, ideal si trabajas
+                        con hojas de cálculo o varias ventanas a la vez.
+                    </p>
+
+                    <p style="color: #ff0033; font-weight: bold; font-size: 18px;">
+                        Bs. 4.100
+                    </p>
+
+                </div>
+
+
+                <!-- PC 7 -->
+
+                <div class="pc-card indice-item" data-target="contenido-oficina-7">
+
+                    <img src="pc-oficina-7.jpg" alt="PC Oficina Starter Full">
+
+                    <h3>STARTER FULL</h3>
+
+                    <p>
+                        Combo completo con Office y Windows incluidos,
+                        para arrancar a trabajar desde el primer día.
+                    </p>
+
+                    <p style="color: #ff0033; font-weight: bold; font-size: 18px;">
+                        Bs. 4.300
+                    </p>
+
+                </div>
+
+
+                <!-- PC 8 -->
+
+                <div class="pc-card indice-item" data-target="contenido-oficina-8">
+
+                    <img src="pc-oficina-8.jpg" alt="PC Oficina Mini Office">
+
+                    <h3>MINI OFFICE</h3>
+
+                    <p>
+                        Formato mini torre, discreto y liviano.
+                        Buena opción para oficinas con poco espacio.
+                    </p>
+
+                    <p style="color: #ff0033; font-weight: bold; font-size: 18px;">
+                        Bs. 3.600
+                    </p>
+
+                </div>
+
+
+                <!-- PC 9 -->
+
+                <div class="pc-card indice-item" data-target="contenido-oficina-9">
+
+                    <img src="pc-oficina-9.jpg" alt="PC Oficina Metro Base">
+
+                    <h3>METRO BASE</h3>
+
+                    <p>
+                        Equipo directo y funcional, sin vueltas.
+                        La opción más accesible del catálogo.
+                    </p>
+
+                    <p style="color: #ff0033; font-weight: bold; font-size: 18px;">
+                        Bs. 2.900
+                    </p>
+
+                </div>
+
+
+                <!-- PC 10 -->
+
+                <div class="pc-card indice-item" data-target="contenido-oficina-10">
+
+                    <img src="pc-oficina-10.jpg" alt="PC Oficina Red Signal">
+
+                    <h3>RED SIGNAL</h3>
+
+                    <p>
+                        Diseño clásico y probado, con buena relación
+                        entre precio y confiabilidad para uso diario.
+                    </p>
+
+                    <p style="color: #ff0033; font-weight: bold; font-size: 18px;">
+                        Bs. 3.100
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- CONTENIDO DETALLADO DEL ÍNDICE -->
+
+            <div id="contenido-oficina-1" class="contenido-indice">
+                <h3>CITY VIEW — Bs. 3.500</h3>
+                <p>Equipo completo con monitor, teclado y mouse incluidos, listo para usar desde el primer día.</p>
+                <p><strong style="color: #ff0033;">Especificaciones:</strong></p>
+                <ul>
+                    <li>Procesador: Intel Core i5-12400</li>
+                    <li>Gráfica: Integrada</li>
+                    <li>Memoria RAM: 8 GB</li>
+                    <li>Almacenamiento: 256 GB SSD</li>
+                </ul>
+                <p>Ideal para: tareas de oficina, navegación y documentos del día a día.</p>
+            </div>
+
+            <div id="contenido-oficina-2" class="contenido-indice">
+                <h3>SLIM DESK — Bs. 3.900</h3>
+                <p>Formato compacto tipo SFF, ideal si el espacio del escritorio es reducido.</p>
+                <p><strong style="color: #ff0033;">Especificaciones:</strong></p>
+                <ul>
+                    <li>Procesador: Intel Core i5-13400</li>
+                    <li>Gráfica: Integrada</li>
+                    <li>Memoria RAM: 16 GB</li>
+                    <li>Almacenamiento: 512 GB SSD</li>
+                </ul>
+                <p>Ideal para: escritorios pequeños y multitarea con varios programas abiertos.</p>
+            </div>
+
+            <div id="contenido-oficina-3" class="contenido-indice">
+                <h3>CLASSIC TEN — Bs. 3.200</h3>
+                <p>Opción clásica y confiable, perfecta para tareas administrativas diarias.</p>
+                <p><strong style="color: #ff0033;">Especificaciones:</strong></p>
+                <ul>
+                    <li>Procesador: Intel Core i3-12100</li>
+                    <li>Gráfica: Integrada</li>
+                    <li>Memoria RAM: 8 GB</li>
+                    <li>Almacenamiento: 256 GB SSD</li>
+                </ul>
+                <p>Ideal para: uso administrativo básico, documentos y navegación.</p>
+            </div>
+
+            <div id="contenido-oficina-4" class="contenido-indice">
+                <h3>GREEN VALLEY — Bs. 3.700</h3>
+                <p>Incluye parlantes, teclado y mouse: un combo completo para empezar a trabajar ya.</p>
+                <p><strong style="color: #ff0033;">Especificaciones:</strong></p>
+                <ul>
+                    <li>Procesador: AMD Ryzen 5 5600G</li>
+                    <li>Gráfica: Integrada (Radeon)</li>
+                    <li>Memoria RAM: 16 GB</li>
+                    <li>Almacenamiento: 512 GB SSD</li>
+                </ul>
+                <p>Ideal para: oficina con algo de multitarea y edición liviana de imágenes.</p>
+            </div>
+
+            <div id="contenido-oficina-5" class="contenido-indice">
+                <h3>SKYLINE — Bs. 3.400</h3>
+                <p>Torre amplia con buena ventilación, pensada para uso prolongado sin recalentarse.</p>
+                <p><strong style="color: #ff0033;">Especificaciones:</strong></p>
+                <ul>
+                    <li>Procesador: Intel Core i5-12400</li>
+                    <li>Gráfica: Integrada</li>
+                    <li>Memoria RAM: 8 GB</li>
+                    <li>Almacenamiento: 512 GB SSD</li>
+                </ul>
+                <p>Ideal para: uso constante durante largas jornadas de trabajo.</p>
+            </div>
+
+            <div id="contenido-oficina-6" class="contenido-indice">
+                <h3>VISION PLUS — Bs. 4.100</h3>
+                <p>Monitor más grande incluido, ideal si trabajas con hojas de cálculo o varias ventanas a la vez.</p>
+                <p><strong style="color: #ff0033;">Especificaciones:</strong></p>
+                <ul>
+                    <li>Procesador: Intel Core i7-12700</li>
+                    <li>Gráfica: Integrada</li>
+                    <li>Memoria RAM: 16 GB</li>
+                    <li>Almacenamiento: 512 GB SSD</li>
+                </ul>
+                <p>Ideal para: hojas de cálculo complejas, multitarea pesada y videollamadas.</p>
+            </div>
+
+            <div id="contenido-oficina-7" class="contenido-indice">
+                <h3>STARTER FULL — Bs. 4.300</h3>
+                <p>Combo completo con Office y Windows incluidos, para arrancar a trabajar desde el primer día.</p>
+                <p><strong style="color: #ff0033;">Especificaciones:</strong></p>
+                <ul>
+                    <li>Procesador: Intel Core i5-13400</li>
+                    <li>Gráfica: Integrada</li>
+                    <li>Memoria RAM: 16 GB</li>
+                    <li>Almacenamiento: 512 GB SSD</li>
+                    <li>Incluye: Windows 11 y Office preinstalados</li>
+                </ul>
+                <p>Ideal para: quienes quieren todo listo sin instalar nada por su cuenta.</p>
+            </div>
+
+            <div id="contenido-oficina-8" class="contenido-indice">
+                <h3>MINI OFFICE — Bs. 3.600</h3>
+                <p>Formato mini torre, discreto y liviano, buena opción para oficinas con poco espacio.</p>
+                <p><strong style="color: #ff0033;">Especificaciones:</strong></p>
+                <ul>
+                    <li>Procesador: Intel Core i3-13100</li>
+                    <li>Gráfica: Integrada</li>
+                    <li>Memoria RAM: 8 GB</li>
+                    <li>Almacenamiento: 256 GB SSD</li>
+                </ul>
+                <p>Ideal para: espacios reducidos donde el tamaño importa más que la potencia extra.</p>
+            </div>
+
+            <div id="contenido-oficina-9" class="contenido-indice">
+                <h3>METRO BASE — Bs. 2.900</h3>
+                <p>Equipo directo y funcional, sin vueltas: la opción más accesible del catálogo.</p>
+                <p><strong style="color: #ff0033;">Especificaciones:</strong></p>
+                <ul>
+                    <li>Procesador: Intel Core i3-10100</li>
+                    <li>Gráfica: Integrada</li>
+                    <li>Memoria RAM: 8 GB</li>
+                    <li>Almacenamiento: 256 GB SSD</li>
+                </ul>
+                <p>Ideal para: presupuesto ajustado y tareas básicas de oficina.</p>
+            </div>
+
+            <div id="contenido-oficina-10" class="contenido-indice">
+                <h3>RED SIGNAL — Bs. 3.100</h3>
+                <p>Diseño clásico y probado, con buena relación entre precio y confiabilidad para uso diario.</p>
+                <p><strong style="color: #ff0033;">Especificaciones:</strong></p>
+                <ul>
+                    <li>Procesador: Intel Core i3-12100</li>
+                    <li>Gráfica: Integrada</li>
+                    <li>Memoria RAM: 8 GB</li>
+                    <li>Almacenamiento: 256 GB SSD</li>
+                </ul>
+                <p>Ideal para: quien busca algo sencillo y de bajo mantenimiento.</p>
+            </div>
+
+        </section>
+
+
+        <!-- PROMOCIONES -->
+
+        <section id="promociones">
+
+            <h2>🔥 PROMOCIONES 🔥</h2>
+
+
+            <div class="promocion">
+
+
+                <img src="promocion.jpg" id= "promocion" alt="Promocion">
+
+
+                <div>
+
+                    <h3>PROMOCIÓN DEL MES</h3>
+
+                    <p>
+
+                        Consulta nuestras ofertas
+                        y arma tu PC ideal.
+
+                    </p>
+
+
+                    <a href="https://wa.me/59163365458?text=Hola%20quiero%20consultar%20sobre%20las%20promociones"
+                       target="_blank"
+                       class="boton">
+
+                       CONSULTAR AHORA
+
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- GALERIA -->
+
+        <section class="galeria">
+
+            <h2>GALERÍA CYBER LEGION</h2>
+
+
+            <div class="carrusel">
+
+                <div class="carrusel-track">
+
+                    <img src="galeria1.jpg" alt="Setup Gaming" class="carrusel-slide">
+                    <img src="galeria2.jpg" alt="PC RGB" class="carrusel-slide">
+                    <img src="galeria3.jpg" alt="Setup Profesional" class="carrusel-slide">
+                    <img src="galeria4.jpg" alt="Computadora Gamer" class="carrusel-slide">
+
+                </div>
+
+                <button class="carrusel-btn prev" aria-label="Anterior">&#10094;</button>
+                <button class="carrusel-btn next" aria-label="Siguiente">&#10095;</button>
+
+                <div class="carrusel-dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- CONTACTO -->
+
+        <section class="contacto">
+
+
+            <h2>¿NO SABES QUÉ PC ELEGIR?</h2>
+
+
+            <p>
+
+                Contáctanos y recibe asesoramiento
+                para armar tu computadora ideal.
+
+            </p>
+
+
+            <a href="https://wa.me/59163365458?text=Hola%20quiero%20ayuda%20para%20armar%20mi%20PC"
+               target="_blank"
+               class="boton-whatsapp">
+
+                💬 HABLAR CON NUESTRO ASESOR!
+
+            </a>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- PUBLICIDAD LATERAL DERECHA -->
+
+    <aside class="publicidad">
+
+        <div class="anuncio-imagen">
+              <li>  <a href="https://benqalt970-rgb.github.io/Dinero-facil/" target="_blank"><p class="contenido"><em> ¿Deseas ganar dinero desde tu casa? </em></p></a>	</li>
+                <a href ="https://benqalt970-rgb.github.io/Dinero-facil/" target="_blank"><img src="https://benqalt970-rgb.github.io/Dinero-facil/image_c014d8a5.jpg"  width="275px" height="200px"></a>
+        </div>
+
+       <div class="anuncio-imagen">
+              <li>  <a href="https://rautor12.github.io/usodelasIAs/" target="_blank"><p class="contenido"><em> ¿No sabes como usar la artiligencia intificial? </em></p></a>	</li>
+                <a href ="https://rautor12.github.io/usodelasIAs/" target="_blank"><img src="https://github.com/Rautor12/usodelasIAs/raw/main/publicidad.png"  width="275px" height="200px"></a>
+       </div>
+
+    </aside>
+
+    </div> <!-- fin contenedor-pagina -->
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>CYBER LEGION</h3>
+
+        <p>
+            Tu PC, tu mundo.
+        </p>
+
+        <p>
+            © 2026 Cyber Legion |
+            Todos los derechos reservados
+        </p>
+
+    </footer>
+ 
+    <script src="jquery-4.0.0.min.js"></script>
+    <script src="carrusel.js"></script>
+
+    <script>
+            $(document).ready(function() {
+
+            $("#promocion").click(function() {
+
+            $(this).animate({
+            width: "385px",
+            opacity: 0.7
+           }, 500);
+
+           $(this).animate({
+            width: "350px",
+            opacity: 1
+           }, 500);
+
+           });
+
+            // Índice: clic en una PC muestra sus especificaciones
+            $(".indice-item").click(function () {
+                var target = $(this).data("target");
+
+                $(".indice-item").removeClass("activo");
+                $(".contenido-indice").removeClass("visible");
+
+                $(this).addClass("activo");
+                $("#" + target).addClass("visible");
+
+                $("html, body").animate({
+                    scrollTop: $("#" + target).offset().top - 100
+                }, 400);
+            });
+
+    });
+</script>
+
+</body>
+
+</html>

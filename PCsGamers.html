@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="estilos2.css" rel="stylesheet" type="text/css">
+
+    <!-- Google Fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Cyber Legion - Armado de PCs</title>
+
+    <style>
+        /* Las tarjetas de servicios ahora son links completos,
+           pero deben verse igual que antes */
+        a.servicio {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* Índice de PCs: mismo diseño, feedback al clic */
+        .indice-item {
+            cursor: pointer;
+        }
+
+        .indice-item.activo {
+            background: #2a2a2a;
+            box-shadow: 0 10px 25px rgba(255, 0, 51, 0.35);
+            transform: translateY(-4px);
+            border-color: #ff0033;
+        }
+
+        .contenido-indice {
+            display: none;
+            max-width: 750px;
+            margin: 30px auto 0;
+            padding: 30px;
+            background: #1f1f1f;
+            border-left: 4px solid #ff0033;
+        }
+
+        .contenido-indice.visible {
+            display: block;
+        }
+
+        .contenido-indice h3 {
+            color: #ff0033;
+            margin-bottom: 15px;
+        }
+
+        .contenido-indice p {
+            margin-bottom: 14px;
+        }
+
+        .contenido-indice ul {
+            margin: 15px 0 15px 20px;
+            line-height: 1.7;
+        }
+
+        .contenido-indice li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- BANNER -->
+
+    <header>
+
+        <img src="Banner1.jpg"
+             alt="Cyber Legion">
+
+    </header>
+
+
+    <!-- MENU -->
+
+    <nav>
+
+        <ul id="menu">
+
+            <li><a href="https://jhon3julio-cpu.github.io/CyberLegion/">Inicio</a></li>
+
+            <li>
+                <a href="https://www.aorus.com/es-bo/components"
+                   target="_blank">
+                   Componentes
+                </a>
+            </li>
+
+            <li>
+                <a href="https://es.buildcores.com/"
+                   target="_blank">
+                   Armado
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.cyberpuerta.mx/Computadoras/PC-s-de-Escritorio/?srsltid=AfmBOoq_F3GyT0zpD4MDNTvOIEm71-StiBjqDYadd079XwSQAyRN5DNP">
+                    PCs
+                </a>
+            </li>
+
+            <li>
+                <a href="#promociones">
+                    Promociones
+                </a>
+            </li>
+
+            <li>
+                <a href="https://wa.me/59163365458?text=Hola%20quiero%20información%20sobre%20el%20armado%20de%20una%20PC"
+                   target="_blank">
+
+                   Asesor
+
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- CONTENEDOR PRINCIPAL + PUBLICIDAD -->
+
+    <div class="contenedor-pagina">
+
+    <!-- PRESENTACION -->
+
+    <main>
+
+        <!-- PRESENTACION -->
+
+        <section class="presentacion">
+
+            <h1>PCs GAMERS LISTAS PARA JUGAR</h1>
+
+            <p>
+
+                Una <strong>PC Gamer</strong> es un equipo armado
+                específicamente para exigir el máximo rendimiento
+                en videojuegos: procesador y tarjeta gráfica potentes,
+                suficiente memoria RAM, almacenamiento rápido en SSD
+                y un sistema de refrigeración capaz de sostener ese
+                rendimiento por horas sin recalentarse.
+
+                A diferencia de una PC de oficina, cada componente
+                se elige pensando en FPS, fluidez y estabilidad
+                durante sesiones largas de juego.
+
+            </p>
+
+        </section>
+
+
+        <!-- CATALOGO -->
+
+        <section id="pcs">
+
+            <h2>NUESTRO CATÁLOGO DE PCs GAMER</h2>
+
+            <p style="max-width: 750px; margin: 0 auto 30px; text-align: center;">
+                Estos son algunos de los equipos que armamos.
+                Los precios son referenciales; pueden variar según
+                disponibilidad de componentes. Escríbenos para
+                confirmar specs exactas y stock.
+            </p>
+
+
+            <div class="pcs-grid">
+
+
+                <!-- PC 1 -->
+
+                <div class="pc-card indice-item" data-target="contenido-gamer-1">
+
+                    <img src="pc-case-1.jpg" alt="PC Gamer Cyber Strike RGB">
+
+                    <h3>CYBER STRIKE RGB</h3>
+
+                    <p>
+                        Gama media-alta con barras RGB frontales.
+                        Ideal para gaming fluido en Full HD y 1440p.
+                    </p>
+
+                    <p style="color: #ff0033; font-weight: bold; font-size: 18px;">
+                        Bs. 8.500
+                    </p>
+
+                </div>
+
+
+                <!-- PC 2 -->
+
+                <div class="pc-card indice-item" data-target="contenido-gamer-2">
+
+                    <img src="pc-case-2.jpg" alt="PC Gamer Rogue Apex">
+
+                    <h3>ROGUE APEX</h3>
+
+                    <p>
+                        Gama alta con refrigeración líquida y triple
+                        ventilador. Pensada para 1440p/4K exigente.
+                    </p>
+
+                    <p style="color: #ff0033; font-weight: bold; font-size: 18px;">
+                        Bs. 14.200
+                    </p>
+
+                </div>
+
+
+                <!-- PC 3 -->
+
+                <div class="pc-card indice-item" data-target="contenido-gamer-3">
+
+                    <img src="pc-case-3.jpg" alt="PC Gamer Frost Titan">
+
+                    <h3>FROST TITAN</h3>
+
+                    <p>
+                        Gabinete blanco angular con triple fan RGB.
+                        Rendimiento alto y estética limpia y llamativa.
+                    </p>
+
+                    <p style="color: #ff0033; font-weight: bold; font-size: 18px;">
+                        Bs. 12.800
+                    </p>
+
+                </div>
+
+
+                <!-- PC 4 -->
+
+                <div class="pc-card indice-item" data-target="contenido-gamer-4">
+
+                    <img src="pc-case-4.jpg" alt="PC Gamer Shadow Mesh">
+
+                    <h3>SHADOW MESH</h3>
+
+                    <p>
+                        Diseño compacto con panel perforado RGB.
+                        Buena relación precio-rendimiento para empezar.
+                    </p>
+
+                    <p style="color: #ff0033; font-weight: bold; font-size: 18px;">
+                        Bs. 7.900
+                    </p>
+
+                </div>
+
+
+                <!-- PC 5 -->
+
+                <div class="pc-card indice-item" data-target="contenido-gamer-5">
+
+                    <img src="pc-case-5.jpg" alt="PC Gamer Aorus Vanguard">
+
+                    <h3>AORUS VANGUARD</h3>
+
+                    <p>
+                        Gama alta con asa superior, triple ventilador
+                        y gran flujo de aire. Para gaming sin límites.
+                    </p>
+
+                    <p style="color: #ff0033; font-weight: bold; font-size: 18px;">
+                        Bs. 15.500
+                    </p>
+
+                </div>
+
+
+                <!-- PC 6 -->
+
+                <div class="pc-card indice-item" data-target="contenido-gamer-6">
+
+                    <img src="pc-case-6.jpg" alt="PC Gamer Vortex Core">
+
+                    <h3>VORTEX CORE</h3>
+
+                    <p>
+                        Doble ventilador grande y panel mesh.
+                        Buen equilibrio entre ventilación y potencia.
+                    </p>
+
+                    <p style="color: #ff0033; font-weight: bold; font-size: 18px;">
+                        Bs. 9.300
+                    </p>
+
+                </div>
+
+
+                <!-- PC 7 -->
+
+                <div class="pc-card indice-item" data-target="contenido-gamer-7">
+
+                    <img src="pc-case-7.jpg" alt="PC Gamer Nordic Frost">
+
+                    <h3>NORDIC FROST</h3>
+
+                    <p>
+                        Gabinete blanco con listones de madera.
+                        Estética minimalista sin sacrificar potencia.
+                    </p>
+
+                    <p style="color: #ff0033; font-weight: bold; font-size: 18px;">
+                        Bs. 10.600
+                    </p>
+
+                </div>
+
+
+                <!-- PC 8 -->
+
+                <div class="pc-card indice-item" data-target="contenido-gamer-8">
+
+                    <img src="pc-case-8.jpg" alt="PC Gamer Game On Edition">
+
+                    <h3>GAME ON EDITION</h3>
+
+                    <p>
+                        Panel lateral con pantalla pixel art y borde RGB.
+                        Ideal para quien busca un equipo con personalidad.
+                    </p>
+
+                    <p style="color: #ff0033; font-weight: bold; font-size: 18px;">
+                        Bs. 8.200
+                    </p>
+
+                </div>
+
+
+                <!-- PC 9 -->
+
+                <div class="pc-card indice-item" data-target="contenido-gamer-9">
+
+                    <img src="pc-case-9.jpg" alt="PC Gamer Nebula Curve">
+
+                    <h3>NEBULA CURVE</h3>
+
+                    <p>
+                        Gabinete curvo de diseño único con vidrio 360°.
+                        Nuestro equipo tope de gama, para máximo impacto.
+                    </p>
+
+                    <p style="color: #ff0033; font-weight: bold; font-size: 18px;">
+                        Bs. 16.900
+                    </p>
+
+                </div>
+
+
+                <!-- PC 10 -->
+
+                <div class="pc-card indice-item" data-target="contenido-gamer-10">
+
+                    <img src="pc-case-10.jpg" alt="PC Gamer Diamond Strike">
+
+                    <h3>DIAMOND STRIKE</h3>
+
+                    <p>
+                        Panel frontal facetado tipo diamante con RGB.
+                        Gama alta con una de las estéticas más agresivas.
+                    </p>
+
+                    <p style="color: #ff0033; font-weight: bold; font-size: 18px;">
+                        Bs. 11.400
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- CONTENIDO DETALLADO DEL ÍNDICE -->
+
+            <div id="contenido-gamer-1" class="contenido-indice">
+                <h3>CYBER STRIKE RGB — Bs. 8.500</h3>
+                <p>Gama media-alta con barras RGB frontales, lista para gaming fluido en Full HD y 1440p.</p>
+                <p><strong style="color: #ff0033;">Especificaciones:</strong></p>
+                <ul>
+                    <li>Procesador: AMD Ryzen 5 7600</li>
+                    <li>Gráfica: NVIDIA RTX 4060</li>
+                    <li>Memoria RAM: 16 GB</li>
+                    <li>Almacenamiento: 512 GB SSD NVMe</li>
+                </ul>
+                <p>Ideal para: gaming en Full HD/1440p con buena tasa de FPS en los títulos actuales.</p>
+            </div>
+
+            <div id="contenido-gamer-2" class="contenido-indice">
+                <h3>ROGUE APEX — Bs. 14.200</h3>
+                <p>Gama alta con refrigeración líquida y triple ventilador, pensada para 1440p/4K exigente.</p>
+                <p><strong style="color: #ff0033;">Especificaciones:</strong></p>
+                <ul>
+                    <li>Procesador: AMD Ryzen 9 7900X</li>
+                    <li>Gráfica: NVIDIA RTX 4070 Ti</li>
+                    <li>Memoria RAM: 32 GB</li>
+                    <li>Almacenamiento: 1 TB SSD NVMe</li>
+                </ul>
+                <p>Ideal para: gaming en 1440p a máxima calidad y 4K en la mayoría de los títulos.</p>
+            </div>
+
+            <div id="contenido-gamer-3" class="contenido-indice">
+                <h3>FROST TITAN — Bs. 12.800</h3>
+                <p>Gabinete blanco angular con triple fan RGB, rendimiento alto y estética muy llamativa.</p>
+                <p><strong style="color: #ff0033;">Especificaciones:</strong></p>
+                <ul>
+                    <li>Procesador: Intel Core i7-13700F</li>
+                    <li>Gráfica: NVIDIA RTX 4070</li>
+                    <li>Memoria RAM: 32 GB</li>
+                    <li>Almacenamiento: 1 TB SSD NVMe</li>
+                </ul>
+                <p>Ideal para: gaming en 1440p exigente y streaming en simultáneo.</p>
+            </div>
+
+            <div id="contenido-gamer-4" class="contenido-indice">
+                <h3>SHADOW MESH — Bs. 7.900</h3>
+                <p>Diseño compacto con panel perforado RGB, buena relación precio-rendimiento para empezar.</p>
+                <p><strong style="color: #ff0033;">Especificaciones:</strong></p>
+                <ul>
+                    <li>Procesador: AMD Ryzen 5 5600</li>
+                    <li>Gráfica: NVIDIA RTX 4060</li>
+                    <li>Memoria RAM: 16 GB</li>
+                    <li>Almacenamiento: 512 GB SSD NVMe</li>
+                </ul>
+                <p>Ideal para: gaming en Full HD alto refresco, buena puerta de entrada al mundo gamer.</p>
+            </div>
+
+            <div id="contenido-gamer-5" class="contenido-indice">
+                <h3>AORUS VANGUARD — Bs. 15.500</h3>
+                <p>Gama alta con asa superior, triple ventilador y gran flujo de aire, para gaming sin límites.</p>
+                <p><strong style="color: #ff0033;">Especificaciones:</strong></p>
+                <ul>
+                    <li>Procesador: Intel Core i9-13900F</li>
+                    <li>Gráfica: NVIDIA RTX 4080</li>
+                    <li>Memoria RAM: 32 GB</li>
+                    <li>Almacenamiento: 1 TB SSD NVMe</li>
+                </ul>
+                <p>Ideal para: gaming en 4K y creación de contenido en paralelo.</p>
+            </div>
+
+            <div id="contenido-gamer-6" class="contenido-indice">
+                <h3>VORTEX CORE — Bs. 9.300</h3>
+                <p>Doble ventilador grande y panel mesh, buen equilibrio entre ventilación y potencia.</p>
+                <p><strong style="color: #ff0033;">Especificaciones:</strong></p>
+                <ul>
+                    <li>Procesador: AMD Ryzen 5 7600</li>
+                    <li>Gráfica: NVIDIA RTX 4060 Ti</li>
+                    <li>Memoria RAM: 16 GB</li>
+                    <li>Almacenamiento: 1 TB SSD NVMe</li>
+                </ul>
+                <p>Ideal para: gaming en Full HD/1440p con buena refrigeración para sesiones largas.</p>
+            </div>
+
+            <div id="contenido-gamer-7" class="contenido-indice">
+                <h3>NORDIC FROST — Bs. 10.600</h3>
+                <p>Gabinete blanco con listones de madera, estética minimalista sin sacrificar potencia.</p>
+                <p><strong style="color: #ff0033;">Especificaciones:</strong></p>
+                <ul>
+                    <li>Procesador: Intel Core i5-13600KF</li>
+                    <li>Gráfica: NVIDIA RTX 4070</li>
+                    <li>Memoria RAM: 16 GB</li>
+                    <li>Almacenamiento: 1 TB SSD NVMe</li>
+                </ul>
+                <p>Ideal para: gaming en 1440p con una estética distinta al típico gabinete gamer negro.</p>
+            </div>
+
+            <div id="contenido-gamer-8" class="contenido-indice">
+                <h3>GAME ON EDITION — Bs. 8.200</h3>
+                <p>Panel lateral con pantalla pixel art y borde RGB, para quien busca un equipo con personalidad.</p>
+                <p><strong style="color: #ff0033;">Especificaciones:</strong></p>
+                <ul>
+                    <li>Procesador: AMD Ryzen 5 5600</li>
+                    <li>Gráfica: NVIDIA RTX 4060</li>
+                    <li>Memoria RAM: 16 GB</li>
+                    <li>Almacenamiento: 512 GB SSD NVMe</li>
+                </ul>
+                <p>Ideal para: gaming en Full HD con un plus de estilo y personalización.</p>
+            </div>
+
+            <div id="contenido-gamer-9" class="contenido-indice">
+                <h3>NEBULA CURVE — Bs. 16.900</h3>
+                <p>Gabinete curvo de diseño único con vidrio 360°, nuestro equipo tope de gama.</p>
+                <p><strong style="color: #ff0033;">Especificaciones:</strong></p>
+                <ul>
+                    <li>Procesador: Intel Core i9-14900KF</li>
+                    <li>Gráfica: NVIDIA RTX 4080 Super</li>
+                    <li>Memoria RAM: 32 GB</li>
+                    <li>Almacenamiento: 2 TB SSD NVMe</li>
+                </ul>
+                <p>Ideal para: gaming en 4K al máximo y streaming/grabación en simultáneo sin comprometer FPS.</p>
+            </div>
+
+            <div id="contenido-gamer-10" class="contenido-indice">
+                <h3>DIAMOND STRIKE — Bs. 11.400</h3>
+                <p>Panel frontal facetado tipo diamante con RGB, una de las estéticas más agresivas del catálogo.</p>
+                <p><strong style="color: #ff0033;">Especificaciones:</strong></p>
+                <ul>
+                    <li>Procesador: AMD Ryzen 7 7700X</li>
+                    <li>Gráfica: NVIDIA RTX 4070</li>
+                    <li>Memoria RAM: 32 GB</li>
+                    <li>Almacenamiento: 1 TB SSD NVMe</li>
+                </ul>
+                <p>Ideal para: gaming en 1440p con margen para exigir más en varios títulos a la vez.</p>
+            </div>
+
+        </section>
+
+
+        <!-- PROMOCIONES -->
+
+        <section id="promociones">
+
+            <h2>🔥 PROMOCIONES 🔥</h2>
+
+
+            <div class="promocion">
+
+
+                <img src="promocion.jpg" id= "promocion" alt="Promocion">
+
+
+                <div>
+
+                    <h3>PROMOCIÓN DEL MES</h3>
+
+                    <p>
+
+                        Consulta nuestras ofertas
+                        y arma tu PC ideal.
+
+                    </p>
+
+
+                    <a href="https://wa.me/59163365458?text=Hola%20quiero%20consultar%20sobre%20las%20promociones"
+                       target="_blank"
+                       class="boton">
+
+                       CONSULTAR AHORA
+
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- GALERIA -->
+
+        <section class="galeria">
+
+            <h2>GALERÍA CYBER LEGION</h2>
+
+
+            <div class="carrusel">
+
+                <div class="carrusel-track">
+
+                    <img src="galeria1.jpg" alt="Setup Gaming" class="carrusel-slide">
+                    <img src="galeria2.jpg" alt="PC RGB" class="carrusel-slide">
+                    <img src="galeria3.jpg" alt="Setup Profesional" class="carrusel-slide">
+                    <img src="galeria4.jpg" alt="Computadora Gamer" class="carrusel-slide">
+
+                </div>
+
+                <button class="carrusel-btn prev" aria-label="Anterior">&#10094;</button>
+                <button class="carrusel-btn next" aria-label="Siguiente">&#10095;</button>
+
+                <div class="carrusel-dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- CONTACTO -->
+
+        <section class="contacto">
+
+
+            <h2>¿NO SABES QUÉ PC ELEGIR?</h2>
+
+
+            <p>
+
+                Contáctanos y recibe asesoramiento
+                para armar tu computadora ideal.
+
+            </p>
+
+
+            <a href="https://wa.me/59163365458?text=Hola%20quiero%20ayuda%20para%20armar%20mi%20PC"
+               target="_blank"
+               class="boton-whatsapp">
+
+                💬 HABLAR CON NUESTRO ASESOR!
+
+            </a>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- PUBLICIDAD LATERAL DERECHA -->
+
+    <aside class="publicidad">
+
+        <div class="anuncio-imagen">
+              <li>  <a href="https://benqalt970-rgb.github.io/Dinero-facil/" target="_blank"><p class="contenido"><em> ¿Deseas ganar dinero desde tu casa? </em></p></a>	</li>
+                <a href ="https://benqalt970-rgb.github.io/Dinero-facil/" target="_blank"><img src="https://benqalt970-rgb.github.io/Dinero-facil/image_c014d8a5.jpg"  width="275px" height="200px"></a>
+        </div>
+
+       <div class="anuncio-imagen">
+              <li>  <a href="https://rautor12.github.io/usodelasIAs/" target="_blank"><p class="contenido"><em> ¿No sabes como usar la artiligencia intificial? </em></p></a>	</li>
+                <a href ="https://rautor12.github.io/usodelasIAs/" target="_blank"><img src="https://github.com/Rautor12/usodelasIAs/raw/main/publicidad.png"  width="275px" height="200px"></a>
+       </div>
+
+    </aside>
+
+    </div> <!-- fin contenedor-pagina -->
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>CYBER LEGION</h3>
+
+        <p>
+            Tu PC, tu mundo.
+        </p>
+
+        <p>
+            © 2026 Cyber Legion |
+            Todos los derechos reservados
+        </p>
+
+    </footer>
+ 
+    <script src="jquery-4.0.0.min.js"></script>
+    <script src="carrusel.js"></script>
+
+    <script>
+            $(document).ready(function() {
+
+            $("#promocion").click(function() {
+
+            $(this).animate({
+            width: "385px",
+            opacity: 0.7
+           }, 500);
+
+           $(this).animate({
+            width: "350px",
+            opacity: 1
+           }, 500);
+
+           });
+
+            // Índice: clic en una PC muestra sus especificaciones
+            $(".indice-item").click(function () {
+                var target = $(this).data("target");
+
+                $(".indice-item").removeClass("activo");
+                $(".contenido-indice").removeClass("visible");
+
+                $(this).addClass("activo");
+                $("#" + target).addClass("visible");
+
+                $("html, body").animate({
+                    scrollTop: $("#" + target).offset().top - 100
+                }, 400);
+            });
+
+    });
+</script>
+
+</body>
+
+</html>
