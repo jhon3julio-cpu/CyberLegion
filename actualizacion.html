@@ -8,6 +8,11 @@
 
     <link href="estilos.css" rel="stylesheet" type="text/css">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
     <title>Cyber Legion - Actualización</title>
 
     <style>
@@ -469,24 +474,26 @@
             <h2>GALERÍA CYBER LEGION</h2>
 
 
-            <div class="galeria-grid">
+            <div class="carrusel">
 
+                <div class="carrusel-track">
 
-                <img src="galeria1.jpg"
-                     alt="Setup Gaming">
+                    <img src="galeria1.jpg" alt="Setup Gaming" class="carrusel-slide">
+                    <img src="galeria2.jpg" alt="PC RGB" class="carrusel-slide">
+                    <img src="galeria3.jpg" alt="Setup Profesional" class="carrusel-slide">
+                    <img src="galeria4.jpg" alt="Computadora Gamer" class="carrusel-slide">
 
+                </div>
 
-                <img src="galeria2.jpg"
-                     alt="PC RGB">
+                <button class="carrusel-btn prev" aria-label="Anterior">&#10094;</button>
+                <button class="carrusel-btn next" aria-label="Siguiente">&#10095;</button>
 
-
-                <img src="galeria3.jpg"
-                     alt="Setup Profesional">
-
-
-                <img src="galeria4.jpg"
-                     alt="Computadora Gamer">
-
+                <div class="carrusel-dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
 
             </div>
 
@@ -561,6 +568,7 @@
     </footer>
  
     <script src="jquery-4.0.0.min.js"></script>
+    <script src="carrusel.js"></script>
 
     <script>
             $(document).ready(function() {
